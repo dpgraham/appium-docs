@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Real devices ios - Appium</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Appium</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About appium <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about-appium/appium-clients/">Appium clients</a>
+</li>
+                            
+<li >
+    <a href="../../about-appium/intro/">Intro</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../advanced/chromedriver/">Chromedriver</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/cross-domain-iframes/">Cross domain iframes</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/event-timings/">Event timings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/grid/">Grid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/hybrid/">Hybrid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-touch-id/">Ios touch id</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-webkit-debug-proxy/">Ios webkit debug proxy</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/iwd_xcode7/">Iwd xcode7</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-1-0/">Migrating to 1 0</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-xcuitest/">Migrating to xcuitest</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/settings/">Settings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/wda-custom-server/">Wda custom server</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../contributing/appium-from-source/">Appium from source</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/appium-packages/">Appium packages</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/credits/">Credits</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/developers-overview/">Developers overview</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/gulp/">Gulp</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/how-to-write-docs/">How to write docs</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide-2.0/">Style guide 2.0</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide/">Style guide</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/version-branch-release/">Version branch release</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../android-hax-emulator/">Android hax emulator</a>
+</li>
+                            
+<li >
+    <a href="../android-setup/">Android setup</a>
+</li>
+                            
+<li >
+    <a href="../ios-deploy/">Ios deploy</a>
+</li>
+                            
+<li >
+    <a href="../parallel_tests/">Parallel tests</a>
+</li>
+                            
+<li >
+    <a href="../platform-support/">Platform support</a>
+</li>
+                            
+<li >
+    <a href="../real-devices-android/">Real devices android</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Real devices ios</a>
+</li>
+                            
+<li >
+    <a href="../real-devices/">Real devices</a>
+</li>
+                            
+<li >
+    <a href="../running-on-linux/">Running on linux</a>
+</li>
+                            
+<li >
+    <a href="../running-on-osx/">Running on osx</a>
+</li>
+                            
+<li >
+    <a href="../running-on-windows/">Running on windows</a>
+</li>
+                            
+<li >
+    <a href="../troubleshooting/">Troubleshooting</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Writing and running <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../writing-and-running/appium-bindings/">Appium bindings</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/caps/">Caps</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/default-capabilities-arg/">Default capabilities arg</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/espresso/">Espresso</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/finding-elements/">Finding elements</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/ios-xctest-mobile-gestures/">Ios xctest mobile gestures</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/ios_predicate/">Ios predicate</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/mobile-web/">Mobile web</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/network_connection/">Network connection</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/reset-strategies/">Reset strategies</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/running-tests/">Running tests</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/safari-launcher/">Safari launcher</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/server-args/">Server args</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/touch-actions/">Touch actions</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/uiautomator2/">Uiautomator2</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/uiautomator_uiselector/">Uiautomator uiselector</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/unicode/">Unicode</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/windows-app-testing/">Windows app testing</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../real-devices-android/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../real-devices/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#appium-on-ios-real-devices">Appium on iOS Real Devices</a></li>
+            <li><a href="#running-your-tests-with-appium">Running your tests with Appium</a></li>
+            <li><a href="#desired-capabilities">Desired Capabilities</a></li>
+            <li><a href="#required-software">Required Software</a></li>
+        <li class="main "><a href="#configuring-ios-real-device-tests-xcode-7-and-ios-93-or-below">Configuring iOS Real Device Tests: Xcode 7 and iOS 9.3 or below</a></li>
+            <li><a href="#troubleshooting-ideas">Troubleshooting ideas</a></li>
+        <li class="main "><a href="#configuring-ios-real-device-tests-xcode-8-and-ios-93-and-above">Configuring iOS Real Device Tests: Xcode 8 and iOS 9.3 and above</a></li>
+            <li><a href="#basic-automatic-configuration">Basic (automatic) configuration</a></li>
+            <li><a href="#basic-manual-configuration">Basic (manual) configuration</a></li>
+            <li><a href="#full-manual-configuration">Full manual configuration</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="appium-on-ios-real-devices">Appium on iOS Real Devices</h2>
+<p>Appium has support for iOS real device testing.</p>
+<h3 id="running-your-tests-with-appium">Running your tests with Appium</h3>
+<p>Once your device and app are configured, you can run tests on that device by
+passing the <code>udid</code> desired capability, and the bundle ID (via the <code>bundleId</code>
+capability, if the app is installed on the device) or the path to the <code>.ipa</code> or
+<code>.app</code> file via the <code>app</code> desired capability.</p>
+<h3 id="desired-capabilities">Desired Capabilities</h3>
+<p>You can launch the app on a device by including the following desired
+capabilities in your tests:</p>
+<ul>
+<li><code>app</code> or <code>bundleId</code> - specifies the application, or, if it is already installed,
+   simply the bundle identifier of the app so that Appium can launch it</li>
+<li><code>udid</code> - the specific id of the device to test on. This can also be set to
+   <code>auto</code> if there is only a single device, in which case Appium will determine
+   the device id and use it</li>
+</ul>
+<p>Refer to the <a href="/docs/en/writing-running-appium/caps.md">Appium server capabilities</a> page for more detail on
+the capabilities that you can use.</p>
+<h3 id="required-software">Required Software</h3>
+<p>Appium iOS real device support depends on a central third-party software suite,
+<a href="http://www.libimobiledevice.org/">libimobiledevice</a>, which is easily installable
+with <a href="http://brew.sh/">Homebrew</a>)</p>
+<pre><code>brew install libimobiledevice
+</code></pre>
+
+<h2 id="configuring-ios-real-device-tests-xcode-7-and-ios-93-or-below">Configuring iOS Real Device Tests: Xcode 7 and iOS 9.3 or below</h2>
+<p>Automating real devices with iOS 9.3 or below, using Xcode 7.3 or below (i.e.,
+<em>Instruments</em>-based testing) requires a relatively small amount of configuration.
+The central requirement is to have a build of your app signed with a development
+provisioning profile. Unfortunately Apple has removed all of its documentation
+on using older versions of Xcode, but a good overview of the process can be
+found <a href="https://medium.com/ios-os-x-development/ios-code-signing-provisioning-in-a-nutshell-d5b247760bef#.5hirl92tn">here</a>
+and <a href="https://engineering.nodesagency.com/articles/iOS/Understanding-code-signing-for-iOS-apps/">here</a>.</p>
+<p>In a little more detail, to get started on a real device, you will need the following:</p>
+<ul>
+<li>An <a href="https://developer.apple.com/programs/ios/">Apple Developer ID</a> and a valid
+Developer Account with a configured development certificate and provisioning
+profile.</li>
+<li>A valid iOS Development Certificate and Provisioning Profile are necessary to
+test on a real device. Your app will also need to be signed. You can find
+information about this in the <a href="https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/TestingYouriOSApp/TestingYouriOSApp.html">Apple documentation</a>.</li>
+<li>An iPad or iPhone. Make sure this has been set up for development in Xcode.</li>
+<li>A signed <code>.app</code> or <code>.ipa</code> file of your app, or the source code to build one.</li>
+<li>A Mac with <a href="https://developer.apple.com/xcode/">Xcode</a> and the Xcode Command
+Line Developer Tools.</li>
+</ul>
+<p>Appium handles installing the application to the device, using <code>ideviceinstaller</code>
+(part of <code>libimobiledevice</code>), but it is sometimes easier to pre-install your app
+using Xcode to ensure there are no problems (see the <a href="../ios-deploy/">iOS deploy</a>
+document for more information).</p>
+<h3 id="troubleshooting-ideas">Troubleshooting ideas</h3>
+<ol>
+<li>Make sure UDID is correct by checking it in Xcode Organizer or iTunes. It
+   is a long string (20+ chars).</li>
+<li>Make sure that you can run your tests against the Simulator.</li>
+<li>Double check that you can invoke your automation from Instruments.</li>
+<li>Make sure Instruments is not already running.</li>
+<li>Make sure UI Automation is enabled on your device. Settings -&gt; Developer -&gt; Enable UI Automation</li>
+</ol>
+<h2 id="configuring-ios-real-device-tests-xcode-8-and-ios-93-and-above">Configuring iOS Real Device Tests: Xcode 8 and iOS 9.3 and above</h2>
+<p>In addition to the dependency on <code>libimobiledevice</code>, Appium support for real
+devices running iOS 9.3 and above using Xcode 8+ also depends on <code>ios-deploy</code>,
+which is easily available through <a href="https://www.npmjs.com/package/ios-deploy">npm</a></p>
+<pre><code>npm install -g ios-deploy
+</code></pre>
+
+<p>Unfortunately, Apple changed the way it makes testing available, and the new
+way requires the installation of a helper application onto the device, through
+which the application under test is automated. While this is simple in theory,
+the hoops of code signing and provisioning applications for development and
+testing can make this a bit of a headache.</p>
+<p>The application that Appium installs is called <code>WebDriverAgent-Runner</code> (found
+<a href="https://github.com/facebook/WebDriverAgent/">here</a>), and to do the install
+Appium needs to be able to configure its build.</p>
+<h3 id="basic-automatic-configuration">Basic (automatic) configuration</h3>
+<p>The easiest way to get up-and-running with Appium's XCUITest support on iOS
+real devices is to use the automatic configuration strategy. There are two ways
+to do this:</p>
+<ul>
+<li>Use the <code>xcodeOrgId</code> and <code>xcodeSigningId</code> desired capabilities:</li>
+</ul>
+<pre><code class="json">    {
+      &quot;xcodeOrgId&quot;: &quot;&lt;Team ID&gt;&quot;,
+      &quot;xcodeSigningId&quot;: &quot;iPhone Developer&quot;
+    }
+</code></pre>
+
+<ul>
+<li>Create a <code>.xcconfig</code> file somewhere on your file system and add the following to it:</li>
+</ul>
+<pre><code>    DEVELOPMENT_TEAM = &lt;Team ID&gt;
+    CODE_SIGN_IDENTITY = iPhone Developer
+</code></pre>
+
+<p>In either case, the Team ID is a unique 10-character string generated by Apple
+that is assigned to your team. You can find your Team ID using your developer
+account. Sign in to <a href="http://developer.apple.com/account">developer.apple.com/account</a>,
+and click Membership in the sidebar. Your Team ID appears in the Membership
+Information section under the team name. You can also find your team ID listed
+under the "Organizational Unit" field in your iPhone Developer certificate in
+your keychain.</p>
+<p>Note that these are mutually exclusive strategies; use <em>either</em> the
+<code>xcodeConfigFile</code> capability or the combination of <code>xcodeOrgId</code> and <code>xcodeSigningId</code>.</p>
+<p>Once this configuration is done, it should just be a matter of starting your test
+specifying a real device in your <code>udid</code> desired capability.</p>
+<p>If this has not worked it will usually manifest itself in the Appium server logs
+as some error followed by <code>info XCUITest xcodebuild exited with code '65' and
+signal 'null'</code>. This usually means that the necessary code signing is not set up
+correctly. Go on to the <a href="https://github.com/imurchie/appium-xcuitest-driver/blob/isaac-rs/docs/real-device-config.md#basic-manual-configuration">Basic (manual) configuration</a>
+to fix.</p>
+<p>If the <code>WebDriverAgentRunner</code> is successfully installed on the device, but in the
+Appium logs there is an error message something like:</p>
+<pre><code>2017-01-24 09:02:18.358 xcodebuild[30385:339674] Error Domain=com.apple.platform.iphoneos Code=-12 &quot;Unable to launch com.apple.test.WebDriverAgentRunner-Runner&quot; UserInfo={NSLocalizedDescription=Unable to launch com.apple.test.WebDriverAgentRunner-Runner, NSUnderlyingError=0x7fa839cadc60 {Error Domain=DTXMessage Code=1 &quot;(null)&quot; UserInfo={DTXExceptionKey=The operation couldn’t be completed. Unable to launch com.apple.test.WebDriverAgentRunner-Runner because it has an invalid code signature, inadequate entitlements or its profile has not been explicitly trusted by the user. : Failed to launch process with bundle identifier 'com.apple.test.WebDriverAgentRunner-Runner'}}}
+2017-01-24 09:02:18.358 xcodebuild[30385:339674] Error Domain=IDETestOperationsObserverErrorDomain Code=5 &quot;Early unexpected exit, operation never finished bootstrapping - no restart will be attempted&quot; UserInfo={NSLocalizedDescription=Early unexpected exit, operation never finished bootstrapping - no restart will be attempted}
+
+Testing failed:
+    Test target WebDriverAgentRunner encountered an error (Early unexpected exit, operation never finished bootstrapping - no restart will be attempted)
+</code></pre>
+
+<p>The problem is that the developer is not trusted on the device. If you manually
+try to run the <code>WebDriverAgentRunner</code> app on the device, you will see a popup
+message:</p>
+<p><img alt="Untrusted developer" src="../real-devices-img/untrusted-dev.png" /></p>
+<p>You can go to Settings =&gt; General =&gt; Device Management on the device to trust
+the developer and allow the <code>WebDriverAgentRunner</code> app to be run (see <a href="https://support.apple.com/en-us/HT204460">Apple
+documentation for more information</a>).</p>
+<h3 id="basic-manual-configuration">Basic (manual) configuration</h3>
+<p>There are many cases in which the basic automatic configuration is not enough. This
+usually has to do with code signing and the configuration of the project to be
+able to be run on the real device under test. Often this happens when the
+development account being used is a "Free" one, in which case it is not possible
+to create a wildcard provisioning profile, and will often not create one for the
+default application bundle.</p>
+<p>This will manifest as something like an error that Xcode <strong>failed to create
+provisioning profile</strong>:</p>
+<p><img alt="No provisioning profile" src="../real-devices-img/no-prov-prof.png" /></p>
+<p>The easiest way around this is to create a provisioning profile by opening
+<a href="https://developer.apple.com/xcode/">Xcode</a> and creating a new project:</p>
+<p><img alt="Create new project" src="../real-devices-img/create-new-project.png" /></p>
+<p>The type does not matter, other than it being "iOS". "Single View Application"
+is the easiest:</p>
+<p><img alt="Create single page" src="../real-devices-img/create-single-page.png" /></p>
+<p>The important part is to use a unique "Product Name" and "Organization Name". Also,
+at this point, specify your "Team".</p>
+<p><img alt="Setup bundle" src="../real-devices-img/set-up-bundle.png" /></p>
+<p>You can confirm that the provisioning profile was created by looking at the "Project"
+tab:</p>
+<p><img alt="Project pane" src="../real-devices-img/project-prov-prof.png" /></p>
+<p>Or by going into your account preferences and seeing the provisioning profile:</p>
+<p><img alt="Check provisioning profile" src="../real-devices-img/check-prov-prof.png" /></p>
+<p>At this point you have a valid provisioning profile. Make note of the bundle id
+you associated with it, and add that in the <code>updatedWDABundleId</code> desired
+capability for your tests. Then follow the <a href="#basic-automatic-configuration">initial instructions for automatic
+configuration</a>.</p>
+<h3 id="full-manual-configuration">Full manual configuration</h3>
+<p>Alternatively, the provisioning profile can be manually associated with the
+project (keep in mind that this will have to be done each time the WebDriverAgent
+is updated, and is <em>not</em> recommended):</p>
+<ul>
+<li>Find out where your Appium installation is:</li>
+</ul>
+<pre><code>    $ which appium
+    /path/where/installed/bin/appium
+</code></pre>
+
+<ul>
+<li>Given this installation location, <code>/path/where/installed/bin/appium</code>, <code>WebDriverAgent</code>
+    will be found in <code>/path/where/installed/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent</code>.
+    Open a terminal and go to that location, then run the following in order to
+    set the project up:</li>
+</ul>
+<pre><code>    mkdir -p Resources/WebDriverAgent.bundle
+    ./Scripts/bootstrap.sh -d
+</code></pre>
+
+<ul>
+<li>
+<p>Open <code>WebDriverAgent.xcodeproj</code> in Xcode. For <strong>both</strong> the <code>WebDriverAgentLib</code>
+    and <code>WebDriverAgentRunner</code> targets, select "Automatically manage signing"
+    in the "General" tab, and then select your <code>Development Team</code>. This
+    should also auto select <code>Signing Ceritificate</code>. The outcome should look as
+    shown below:</p>
+<p><img alt="WebDriverAgent in Xcode project" src="../real-devices-img/xcode-config.png" /></p>
+<ul>
+<li>Xcode may fail to create a provisioning profile for the <code>WebDriverAgentRunner</code>
+  target:</li>
+</ul>
+<p><img alt="Xcode provisioning fail" src="../real-devices-img/xcode-facebook-fail.png" /></p>
+<ul>
+<li>This necessitates manually changing the bundle id for the target by going
+  into the "Build Settings" tab, and changing the "Product Bundle Identifier"
+  from <code>com.facebook.WebDriverAgentRunner</code> to something that Xcode will accept:</li>
+</ul>
+<p><img alt="Xcode bundle id" src="../real-devices-img/xcode-bundle-id.png" /></p>
+<ul>
+<li>Going back to the "General" tab for the <code>WebDriverAgentRunner</code> target, you
+  should now see that it has created a provisioning profile and all is well:</li>
+</ul>
+<p><img alt="Xcode provisioning profile" src="../real-devices-img/xcode-facebook-succeed.png" /></p>
+</li>
+<li>
+<p>Finally, you can verify that everything works. Build the project:</p>
+</li>
+</ul>
+<pre><code>    xcodebuild -project WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination 'id=&lt;udid&gt;' test
+</code></pre>
+
+<p>If this was successful, the output should end with something like:</p>
+<pre><code>    Test Suite 'All tests' started at 2017-01-23 15:49:12.585
+    Test Suite 'WebDriverAgentRunner.xctest' started at 2017-01-23 15:49:12.586
+    Test Suite 'UITestingUITests' started at 2017-01-23 15:49:12.587
+    Test Case '-[UITestingUITests testRunner]' started.
+        t =     0.00s     Start Test at 2017-01-23 15:49:12.588
+        t =     0.00s     Set Up
+</code></pre>
+
+<ul>
+<li>To completely verify, you can try accessing the WebDriverAgent server status
+    (<strong>note:</strong> you <em>must</em> be on the same network as the device, and know its IP
+    address, from Settings =&gt; Wi-Fi =&gt; Current Network):</li>
+</ul>
+<pre><code>    export DEVICE_URL='http://&lt;device IP&gt;:8100'
+    export JSON_HEADER='-H &quot;Content-Type: application/json;charset=UTF-8, accept: application/json&quot;'
+    curl -X GET $JSON_HEADER $DEVICE_URL/status
+</code></pre>
+
+<pre><code>You ought to get back output something like this:
+</code></pre>
+<pre><code>    {
+      &quot;value&quot; : {
+        &quot;state&quot; : &quot;success&quot;,
+        &quot;os&quot; : {
+          &quot;name&quot; : &quot;iOS&quot;,
+          &quot;version&quot; : &quot;10.2&quot;
+        },
+        &quot;ios&quot; : {
+          &quot;simulatorVersion&quot; : &quot;10.2&quot;,
+          &quot;ip&quot; : &quot;192.168.0.7&quot;
+        },
+        &quot;build&quot; : {
+          &quot;time&quot; : &quot;Jan 23 2017 14:59:57&quot;
+        }
+      },
+      &quot;sessionId&quot; : &quot;8951A6DD-F3AD-410E-A5DB-D042F42F68A7&quot;,
+      &quot;status&quot; : 0
+    }
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

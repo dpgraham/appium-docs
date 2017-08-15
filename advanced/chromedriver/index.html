@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Chromedriver - Appium</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Appium</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About appium <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about-appium/appium-clients/">Appium clients</a>
+</li>
+                            
+<li >
+    <a href="../../about-appium/intro/">Intro</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li class="active">
+    <a href="./">Chromedriver</a>
+</li>
+                            
+<li >
+    <a href="../cross-domain-iframes/">Cross domain iframes</a>
+</li>
+                            
+<li >
+    <a href="../event-timings/">Event timings</a>
+</li>
+                            
+<li >
+    <a href="../grid/">Grid</a>
+</li>
+                            
+<li >
+    <a href="../hybrid/">Hybrid</a>
+</li>
+                            
+<li >
+    <a href="../ios-touch-id/">Ios touch id</a>
+</li>
+                            
+<li >
+    <a href="../ios-webkit-debug-proxy/">Ios webkit debug proxy</a>
+</li>
+                            
+<li >
+    <a href="../iwd_xcode7/">Iwd xcode7</a>
+</li>
+                            
+<li >
+    <a href="../migrating-to-1-0/">Migrating to 1 0</a>
+</li>
+                            
+<li >
+    <a href="../migrating-to-xcuitest/">Migrating to xcuitest</a>
+</li>
+                            
+<li >
+    <a href="../settings/">Settings</a>
+</li>
+                            
+<li >
+    <a href="../wda-custom-server/">Wda custom server</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../contributing/appium-from-source/">Appium from source</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/appium-packages/">Appium packages</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/credits/">Credits</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/developers-overview/">Developers overview</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/gulp/">Gulp</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/how-to-write-docs/">How to write docs</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide-2.0/">Style guide 2.0</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide/">Style guide</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/version-branch-release/">Version branch release</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../setup/android-hax-emulator/">Android hax emulator</a>
+</li>
+                            
+<li >
+    <a href="../../setup/android-setup/">Android setup</a>
+</li>
+                            
+<li >
+    <a href="../../setup/ios-deploy/">Ios deploy</a>
+</li>
+                            
+<li >
+    <a href="../../setup/parallel_tests/">Parallel tests</a>
+</li>
+                            
+<li >
+    <a href="../../setup/platform-support/">Platform support</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-android/">Real devices android</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-ios/">Real devices ios</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices/">Real devices</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-linux/">Running on linux</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-osx/">Running on osx</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-windows/">Running on windows</a>
+</li>
+                            
+<li >
+    <a href="../../setup/troubleshooting/">Troubleshooting</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Writing and running <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../writing-and-running/appium-bindings/">Appium bindings</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/caps/">Caps</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/default-capabilities-arg/">Default capabilities arg</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/espresso/">Espresso</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/finding-elements/">Finding elements</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/ios-xctest-mobile-gestures/">Ios xctest mobile gestures</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/ios_predicate/">Ios predicate</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/mobile-web/">Mobile web</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/network_connection/">Network connection</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/reset-strategies/">Reset strategies</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/running-tests/">Running tests</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/safari-launcher/">Safari launcher</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/server-args/">Server args</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/touch-actions/">Touch actions</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/uiautomator2/">Uiautomator2</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/uiautomator_uiselector/">Uiautomator uiselector</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/unicode/">Unicode</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/windows-app-testing/">Windows app testing</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../../about-appium/intro/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../cross-domain-iframes/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#chromedriver">Chromedriver</a></li>
+            <li><a href="#installing-an-network-issues">Installing an network issues</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="chromedriver">Chromedriver</h2>
+<p>Appium supports automating Android web pages (in Chrome and the built-in Browser) and
+hybrid apps that are Chrome-backed, by managing a <a href="https://sites.google.com/a/chromium.org/chromedriver/">Chromedriver</a>
+instance and proxying commands to it when necessary. It comes bundled with the
+<a href="https://chromedriver.storage.googleapis.com/LATEST_RELEASE">latest version of Chromedriver</a>, installed through the
+npm package <a href="https://www.npmjs.com/package/appium-chromedriver">appium-chromedriver</a>
+(Github: <a href="https://github.com/appium/appium-chromedriver">appium-chromedriver</a>).</p>
+<p>Unfortunately, with each update to Chromedriver there is an increase in the minimum
+supported version of Chrome, such that older devices are often unable to be automated
+with the bundled version. In the Appium server logs there will be an error like:</p>
+<pre><code>An unknown server-side error occurred while processing the command.
+Original error: unknown error: Chrome version must be &gt;= 55.0.2883.0
+</code></pre>
+
+<p>To get around this, Appium can be configured to use a particular Chromedriver version,
+either at install time, by either passing the <code>--chromedriver_version</code> config
+property (e.g., <code>npm install appium --chromedriver_version="2.16"</code>) or specifying
+the version in the <code>CHROMEDRIVER_VERSION</code> environment variable (i.e., <code>CHROMEDRIVER_VERSION=2.20 npm install appium</code>;
+this can also be set to <code>LATEST</code> to get the most recent version),
+or at runtime, by specifying the <code>--chromedriver-executable</code> server flag, along
+with the full path to the Chromedriver executable which was manually downloaded
+(e.g., <code>appium --chromedriver-executable /path/to/my/chromedriver</code>).</p>
+<p>The following is a list of Chromedriver versions and their corresponding minimum
+Chrome version that is automatable:</p>
+<p>| Version | Minimum Chrome Version | Link to Chromedriver                                                      |
+|=========|========================|===========================================================================|
+| 2.29    | 57.0.2987.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.29/">link</a> |
+| 2.28    | 55.0.2883.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.28/">link</a> |
+| 2.27    | 54.0.2840.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.27/">link</a> |
+| 2.26    | 53.0.2785.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.26/">link</a> |
+| 2.25    | 53.0.2785.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.25/">link</a> |
+| 2.24    | 52.0.2743.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.24/">link</a> |
+| 2.23    | 51.0.2704.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.23/">link</a> |
+| 2.22    | 49.0.2623.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.22/">link</a> |
+| 2.21    | 46.0.2490.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.21/">link</a> |
+| 2.20    | 43.0.2357.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.20/">link</a> |
+| 2.19    | 43.0.2357.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.19/">link</a> |
+| 2.18    | 43.0.2357.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.18/">link</a> |
+| 2.17    | 42.0.2311.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.17/">link</a> |
+| 2.16    | 42.0.2311.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.16/">link</a> |
+| 2.15    | 40.0.2214.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.15/">link</a> |
+| 2.14    | 39.0.2171.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.14/">link</a> |
+| 2.13    | 38.0.2125.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.13/">link</a> |
+| 2.12    | 36.0.1985.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.12/">link</a> |
+| 2.11    | 36.0.1985.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.11/">link</a> |
+| 2.10    | 33.0.1751.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.10/">link</a> |
+| 2.9     | 31.0.1650.59           | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.9/">link</a>  |
+| 2.8     | 30.0.1573.2            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.8/">link</a>  |
+| 2.7     | 30.0.1573.2            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.7/">link</a>  |
+| 2.6     |                        | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.6/">link</a>  |
+| 2.5     |                        | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.5/">link</a>  |
+| 2.4     | 29.0.1545.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.4/">link</a>  |
+| 2.3     | 28.0.1500.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.3/">link</a>  |
+| 2.2     | 27.0.1453.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.2/">link</a>  |
+| 2.1     | 27.0.1453.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.1/">link</a>  |
+| 2.0     | 27.0.1453.0            | <a href="https://chromedriver.storage.googleapis.com/index.html?path=2.0/">link</a>  |</p>
+<p>The complete list of available Chromedriver releases is <a href="https://chromedriver.storage.googleapis.com/index.html">here</a>. To find
+the minimum supported version for any particular version, get the <a href="https://www.chromium.org/Home">Chromium</a>
+<a href="https://chromium.googlesource.com/chromium/src/+/master/docs/get_the_code.md">source code</a>,
+check out the release commit, and check the variable <code>kMinimumSupportedChromeVersion</code>
+in the file <code>src/chrome/test/chromedriver/chrome/version.cc</code>.</p>
+<h3 id="installing-an-network-issues">Installing an network issues</h3>
+<p>When Appium is installed it needs to download Chromedriver, so there is the possibility
+that there could be network problems that make the install fail.</p>
+<p>By default Chromedriver is retrieved from <code>https://chromedriver.storage.googleapis.com/</code>.
+To use a mirror of the ChromeDriver binaries use npm config property <code>chromedriver_cdnurl</code>.</p>
+<pre><code class="bash">npm install appium-chromedriver --chromedriver_cdnurl=http://npm.taobao.org/mirrors/chromedriver
+</code></pre>
+
+<p>Or add the property into your <a href="https://docs.npmjs.com/files/npmrc"><code>.npmrc</code></a> file.</p>
+<pre><code class="bash">chromedriver_cdnurl=http://npm.taobao.org/mirrors/chromedriver
+</code></pre>
+
+<p>Another option is to use PATH variable <code>CHROMEDRIVER_CDNURL</code>.</p>
+<pre><code class="bash">CHROMEDRIVER_CDNURL=http://npm.taobao.org/mirrors/chromedriver npm install appium-chromedriver
+</code></pre>
+
+<p>It may also be necessary to adjust network proxy and firewall settings to allow
+the download to occur.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

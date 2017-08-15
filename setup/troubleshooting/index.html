@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Troubleshooting - Appium</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Appium</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About appium <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about-appium/appium-clients/">Appium clients</a>
+</li>
+                            
+<li >
+    <a href="../../about-appium/intro/">Intro</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../advanced/chromedriver/">Chromedriver</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/cross-domain-iframes/">Cross domain iframes</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/event-timings/">Event timings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/grid/">Grid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/hybrid/">Hybrid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-touch-id/">Ios touch id</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-webkit-debug-proxy/">Ios webkit debug proxy</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/iwd_xcode7/">Iwd xcode7</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-1-0/">Migrating to 1 0</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-xcuitest/">Migrating to xcuitest</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/settings/">Settings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/wda-custom-server/">Wda custom server</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../contributing/appium-from-source/">Appium from source</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/appium-packages/">Appium packages</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/credits/">Credits</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/developers-overview/">Developers overview</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/gulp/">Gulp</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/how-to-write-docs/">How to write docs</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide-2.0/">Style guide 2.0</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide/">Style guide</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/version-branch-release/">Version branch release</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../android-hax-emulator/">Android hax emulator</a>
+</li>
+                            
+<li >
+    <a href="../android-setup/">Android setup</a>
+</li>
+                            
+<li >
+    <a href="../ios-deploy/">Ios deploy</a>
+</li>
+                            
+<li >
+    <a href="../parallel_tests/">Parallel tests</a>
+</li>
+                            
+<li >
+    <a href="../platform-support/">Platform support</a>
+</li>
+                            
+<li >
+    <a href="../real-devices-android/">Real devices android</a>
+</li>
+                            
+<li >
+    <a href="../real-devices-ios/">Real devices ios</a>
+</li>
+                            
+<li >
+    <a href="../real-devices/">Real devices</a>
+</li>
+                            
+<li >
+    <a href="../running-on-linux/">Running on linux</a>
+</li>
+                            
+<li >
+    <a href="../running-on-osx/">Running on osx</a>
+</li>
+                            
+<li >
+    <a href="../running-on-windows/">Running on windows</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Troubleshooting</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Writing and running <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../writing-and-running/appium-bindings/">Appium bindings</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/caps/">Caps</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/default-capabilities-arg/">Default capabilities arg</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/espresso/">Espresso</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/finding-elements/">Finding elements</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/ios-xctest-mobile-gestures/">Ios xctest mobile gestures</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/ios_predicate/">Ios predicate</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/mobile-web/">Mobile web</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/network_connection/">Network connection</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/reset-strategies/">Reset strategies</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/running-tests/">Running tests</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/safari-launcher/">Safari launcher</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/server-args/">Server args</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/touch-actions/">Touch actions</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/uiautomator2/">Uiautomator2</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/uiautomator_uiselector/">Uiautomator uiselector</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/unicode/">Unicode</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/windows-app-testing/">Windows app testing</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../running-on-windows/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../writing-and-running/appium-bindings/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#troubleshooting-appium">Troubleshooting Appium</a></li>
+            <li><a href="#general">General</a></li>
+            <li><a href="#if-youre-running-appiumapp">If you're running Appium.app</a></li>
+            <li><a href="#if-youre-running-appium-from-source">If you're running Appium from source</a></li>
+            <li><a href="#android">Android</a></li>
+            <li><a href="#windows">Windows</a></li>
+            <li><a href="#ios">IOS</a></li>
+            <li><a href="#webviewhybridsafari-app-support">Webview/Hybrid/Safari app support</a></li>
+            <li><a href="#let-the-community-know">Let the community know</a></li>
+            <li><a href="#known-issues">Known Issues</a></li>
+            <li><a href="#specific-errors">Specific Errors</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="troubleshooting-appium">Troubleshooting Appium</h2>
+<p>Here's what to do if you're experiencing problems, before you submit a ticket
+to github or write to the <a href="https://discuss.appium.io">appium-discuss discussion group</a>.</p>
+<h3 id="general">General</h3>
+<ul>
+<li>Make sure you've followed the getting started steps in the <a href="/README.md">README</a></li>
+<li>Make sure your system is set up appropriately (i.e., XCode is updated,
+  Android SDK is installed and <code>ANDROID_HOME</code> is set.</li>
+<li>Make sure the paths to your applications are correct</li>
+<li>On windows run appium.app as administrator or when running from source you need to run cmd as administrator.</li>
+</ul>
+<h3 id="if-youre-running-appiumapp">If you're running Appium.app</h3>
+<ul>
+<li>Update the app and restart. If you get a message saying the app can't be updated,
+  re-download it from <a href="http://appium.io">appium.io</a>.</li>
+</ul>
+<h3 id="if-youre-running-appium-from-source">If you're running Appium from source</h3>
+<ul>
+<li><code>git pull</code> to make sure you're running the latest code</li>
+<li>Remove old dependencies: <code>rm -rf node_modules</code></li>
+<li>Re-install dependencies: <code>npm install</code></li>
+<li>
+<p>Re-transpile the code: <code>gulp transpile</code></p>
+</li>
+<li>
+<p>You can also use <a href="https://github.com/appium/appium-doctor">Appium Doctor</a> to determine whether your system is configured correctly for Appium.</p>
+</li>
+<li>If you get this error after upgrading to Android SDK 22:
+  <code>{ANDROID_HOME}/tools/ant/uibuild.xml:155: SDK does not have any Build Tools installed.</code>
+In the Android SDK 22, the platform and build tools are split up into their
+own items in the SDK manager. Make sure you install the build-tools and platform-tools.</li>
+</ul>
+<h3 id="android">Android</h3>
+<ul>
+<li>Make sure the Android emulator is up and running.</li>
+<li>It's sometimes useful to run <code>adb kill-server &amp;&amp; adb devices</code>. This can
+  reset the connection to the Android device.</li>
+<li>Make sure you set ANDROID_HOME pointing to the Android SDK directory</li>
+</ul>
+<h3 id="windows">Windows</h3>
+<ul>
+<li>Make sure developer mode is on</li>
+<li>Make sure command prompt is Admin</li>
+<li>Check that the URL Appium server is listening to matches the one specified in test script</li>
+</ul>
+<h3 id="ios">IOS</h3>
+<ul>
+<li>Make sure Instruments.app is not open</li>
+<li>If you're running the simulator, make sure your actual device is not
+  plugged in</li>
+<li>Make sure the accessibility helper is turned off in your Settings app</li>
+<li>Make sure the app is compiled for the version of the simulator that's being
+  run</li>
+<li>Make sure the app is compiled for the simulator (or real device) as
+  appropriate (e.g., in debug mode for the simulator), or you might get
+  a <code>posix spawn</code> error.</li>
+<li>If you've ever run Appium with sudo, you might need to <code>sudo rm
+  /tmp/instruments_sock</code> and try again as not-sudo.</li>
+<li>If this is the first time you've run Appium, make sure to authorize the use
+  of Instruments. See <a href="../running-on-osx/#authorizing-ios-on-the-computer">running on OSX documentation</a>.</li>
+<li>If Instruments is crashing when running against a physical device ("exited with code 253"), ensure Xcode has downloaded device symbols. Go to Window -&gt; Devices, and it should start automatically. This is needed after iOS version upgrades.</li>
+<li>If you see <code>iOS Simulator failed to install the application.</code> and the
+  paths are correct, try restarting the computer.</li>
+<li>Make sure your macOS keychain that holds the certificate(s) needed for building your app and the WebDriverAgent is unlocked. Especialy if you are using ssh. General symptom to look for is <code>codesign</code> failure.</li>
+<li>If you have custom elements in your app, they will not be automatable by
+  UIAutomation (and therefore Appium) by default. You need to set the
+  accessibility status to 'enabled' on them. The way to do this in code is:</li>
+</ul>
+<p><code>center
+  [myCustomView setAccessibilityEnabled:YES];</code></p>
+<ul>
+<li>Tests on iOS may exhibit symptoms similar to a memory leak including sluggish
+  performance or hangs. If you experience this problem, it's likely due to a
+  known issue with NSLog. One option is to remove NSLog from your code.
+  However, there are several more nuanced approaches that may also help without
+  requiring that you refactor.</li>
+</ul>
+<p>### Workaround 1
+  NSLog is a macro and can be redefined. E.g.,
+  ```objectivec
+  // <em>You'll need to define TEST or TEST2 and then recompile.</em></p>
+<p>#ifdef TEST
+    #define NSLog(...) _BlackHoleTestLogger(<strong>VA_ARGS</strong>);
+  #endif // TEST
+  #ifdef TEST2
+    #define NSLog(...) _StdoutTestLogger(<strong>VA_ARGS</strong>);
+  #endif // TEST2</p>
+<p>void _BlackHoleTestLogger(NSString *format, ...) {
+      //
+  }</p>
+<p>void _StdoutTestLogger(NSString *format, ...) {
+      va_list argumentList;
+      va_start(argumentList, format);
+      NSMutableString * message = [[NSMutableString alloc] initWithFormat:format
+                                                  arguments:argumentList];</p>
+<pre><code>  printf(message);
+
+  va_end(argumentList);
+  [message release];
+</code></pre>
+<p>}
+  ```</p>
+<p>### Workaround 2
+  Manually replace the underlying function that NSLog wraps. This method was recommended by
+  <a href="https://support.apple.com/kb/TA45403?locale=en_US&amp;viewlocale=en_US">Apple in a similar context.</a></p>
+<p>```objectivec
+  extern void _NSSetLogCStringFunction(void(<em>)(const char </em>, unsigned, BOOL));</p>
+<p>static void _GarbageFreeLogCString(const char *message, unsigned length, BOOL withSyslogBanner) {
+     fprintf(stderr, "%s\n", message);
+  }</p>
+<p>int main (int argc, const char <em>argv[]) {
+     NSAutoreleasePool </em>pool = [[NSAutoreleasePool alloc] init];
+     int exitCode;</p>
+<pre><code> setbuf(stderr, NULL);
+
+ _NSSetLogCStringFunction(_GarbageFreeLogCString);
+ exitCode = WOApplicationMain(@"Application", argc, argv);
+ [pool release];
+ return exitCode;
+</code></pre>
+<p>}
+```</p>
+<h3 id="webviewhybridsafari-app-support">Webview/Hybrid/Safari app support</h3>
+<ul>
+<li>Make Sure you enable the 'Web Inspector' on the real device.</li>
+<li>Make Sure you enable the Safari - Advance Preferences- Developer menu for
+  simulators.</li>
+<li>Make sure you are properly switching contexts using the <code>context</code> appium commands provided by your client library.</li>
+<li>If you getting this error: select_port() failed, when trying to open the
+  proxy, see this <a href="https://groups.google.com/forum/#!topic/appium-discuss/tw2GaSN8WX0">discussion</a></li>
+<li>In a Safari session, if the logs indicate that the initial url cannot be entered, make sure that
+  you have the software keyboard enabled. See this <a href="https://github.com/appium/appium/issues/6440">discussion</a>.</li>
+</ul>
+<h3 id="let-the-community-know">Let the community know</h3>
+<p>Once you've tried the above steps and your issue still isn't resolved,
+here's what you can do:</p>
+<p>If you're having trouble getting Appium working and the error messages Appium
+provides are not clear, join the <a href="https://discuss.appium.io">discussion group</a>
+and send a message. Please include the following:</p>
+<ul>
+<li>How you're running Appium (Appium.app, npm, source)</li>
+<li>What operating system you are using</li>
+<li>What device and version you are testing against (i.e. Android 4.4, or iOS 7.1)</li>
+<li>Whether you are running against a real device or a simulator/emulator</li>
+<li>The client-side and server-side errors you're getting (i.e.,
+"In Python this is the exception I get in my test script,
+and here's a link to a paste of the Appium server output)</li>
+<li>Per above, it's very important to include a paste of the Appium server
+output when it's run in verbose mode so that we can diagnose what's going on.</li>
+</ul>
+<p>If you've found what you believe is a bug, go straight to the <a href="https://github.com/appium/appium/issues">issue tracker</a>
+and submit an issue describing the bug and a repro case.</p>
+<h3 id="known-issues">Known Issues</h3>
+<ul>
+<li>If you've installed Node from the Node website, it requires that you use sudo
+  for <code>npm</code>. This is not ideal. Try to get node with <a href="https://github.com/creationix/nvm">nvm</a>,
+  <a href="https://github.com/visionmedia/n">n</a> or <code>brew install node</code> instead!</li>
+<li>Webview support works on real iOS devices with a proxy, see <a href="https://groups.google.com/d/msg/appium-discuss/u1ropm4OEbY/uJ3y422a5_kJ">discussion</a>.</li>
+<li>Sometimes iOS UI elements become invalidated milliseconds after they are
+  found. This results in an error that looks like <code>(null) cannot be tapped</code>.
+  Sometimes the only solution is to put the finding-and-clicking code in a retry
+  block.</li>
+<li>Appium may have difficulties finding the <code>node</code> executable if you've
+  installed Node and npm via MacPorts. You must make sure that the MacPorts bin
+  folder (<code>/opt/local/bin</code> by default) is added to <code>PATH</code> somewhere in your
+  <code>~/.profile</code>, <code>~/.bash_profile</code> or <code>~/.bashrc</code>.</li>
+</ul>
+<h3 id="specific-errors">Specific Errors</h3>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Error</th>
+<th>Resolution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Running ios test</td>
+<td><code>[INST STDERR] posix spawn failure; aborting launch</code></td>
+<td>Your app is not compiled correctly for the simulator or device.</td>
+</tr>
+<tr>
+<td>Running mobile safari test</td>
+<td><code>error: Could not prepare mobile safari with version '7.1'</code></td>
+<td>You probably need to run the authorize script again to make the iOS SDK files writeable. See <a href="../running-on-osx/#authorizing-ios-on-the-computer">running on OSX documentation</a></td>
+</tr>
+</tbody>
+</table></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

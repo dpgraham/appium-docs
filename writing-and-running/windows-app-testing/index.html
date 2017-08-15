@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Windows app testing - Appium</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Appium</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About appium <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about-appium/appium-clients/">Appium clients</a>
+</li>
+                            
+<li >
+    <a href="../../about-appium/intro/">Intro</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../advanced/chromedriver/">Chromedriver</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/cross-domain-iframes/">Cross domain iframes</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/event-timings/">Event timings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/grid/">Grid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/hybrid/">Hybrid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-touch-id/">Ios touch id</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-webkit-debug-proxy/">Ios webkit debug proxy</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/iwd_xcode7/">Iwd xcode7</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-1-0/">Migrating to 1 0</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-xcuitest/">Migrating to xcuitest</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/settings/">Settings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/wda-custom-server/">Wda custom server</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../contributing/appium-from-source/">Appium from source</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/appium-packages/">Appium packages</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/credits/">Credits</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/developers-overview/">Developers overview</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/gulp/">Gulp</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/how-to-write-docs/">How to write docs</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide-2.0/">Style guide 2.0</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide/">Style guide</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/version-branch-release/">Version branch release</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../setup/android-hax-emulator/">Android hax emulator</a>
+</li>
+                            
+<li >
+    <a href="../../setup/android-setup/">Android setup</a>
+</li>
+                            
+<li >
+    <a href="../../setup/ios-deploy/">Ios deploy</a>
+</li>
+                            
+<li >
+    <a href="../../setup/parallel_tests/">Parallel tests</a>
+</li>
+                            
+<li >
+    <a href="../../setup/platform-support/">Platform support</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-android/">Real devices android</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-ios/">Real devices ios</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices/">Real devices</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-linux/">Running on linux</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-osx/">Running on osx</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-windows/">Running on windows</a>
+</li>
+                            
+<li >
+    <a href="../../setup/troubleshooting/">Troubleshooting</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Writing and running <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../appium-bindings/">Appium bindings</a>
+</li>
+                            
+<li >
+    <a href="../caps/">Caps</a>
+</li>
+                            
+<li >
+    <a href="../default-capabilities-arg/">Default capabilities arg</a>
+</li>
+                            
+<li >
+    <a href="../espresso/">Espresso</a>
+</li>
+                            
+<li >
+    <a href="../finding-elements/">Finding elements</a>
+</li>
+                            
+<li >
+    <a href="../ios-xctest-mobile-gestures/">Ios xctest mobile gestures</a>
+</li>
+                            
+<li >
+    <a href="../ios_predicate/">Ios predicate</a>
+</li>
+                            
+<li >
+    <a href="../mobile-web/">Mobile web</a>
+</li>
+                            
+<li >
+    <a href="../network_connection/">Network connection</a>
+</li>
+                            
+<li >
+    <a href="../reset-strategies/">Reset strategies</a>
+</li>
+                            
+<li >
+    <a href="../running-tests/">Running tests</a>
+</li>
+                            
+<li >
+    <a href="../safari-launcher/">Safari launcher</a>
+</li>
+                            
+<li >
+    <a href="../server-args/">Server args</a>
+</li>
+                            
+<li >
+    <a href="../touch-actions/">Touch actions</a>
+</li>
+                            
+<li >
+    <a href="../uiautomator2/">Uiautomator2</a>
+</li>
+                            
+<li >
+    <a href="../uiautomator_uiselector/">Uiautomator uiselector</a>
+</li>
+                            
+<li >
+    <a href="../unicode/">Unicode</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Windows app testing</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../unicode/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li class="disabled">
+                        <a rel="prev" >
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#windows-application-ui-testing">Windows Application UI Testing</a></li>
+            <li><a href="#java-samples">Java Samples</a></li>
+            <li><a href="#c-samples">C# Samples</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#creating-your-own-test-script">Creating Your Own Test Script</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="windows-application-ui-testing">Windows Application UI Testing</h1>
+<p>Windows specific UI testing on Appium is powered by [WinAppDriver] (https://github.com/Microsoft/WinAppDriver), which is downloaded as part of the Appium install.</p>
+<h2 id="java-samples">Java Samples</h2>
+<ol>
+<li>Open the sample folder as an existing project in a Java IDE such as IntelliJ. For example: <a href="https://github.com/Microsoft/WinAppDriver/tree/master/Samples/Java/CalculatorTest">CalculatorTest</a></li>
+<li>In the Java IDE build and run the test</li>
+</ol>
+<h2 id="c-samples">C# Samples</h2>
+<ol>
+<li>Pull and open <code>CalculatorTest.sln</code> under <a href="https://github.com/Microsoft/WinAppDriver/tree/master/Samples/C%23/CalculatorTest">CalculatorTest</a></li>
+<li>In Visual Studio 2015 with the test solution open build the test and select <strong>Test &gt; Run &gt; All Tests</strong></li>
+</ol>
+<h2 id="features">Features</h2>
+<p>Windows Application Driver supports testing <strong>Universal Windows Platform (UWP)</strong> and <strong>Classic Windows (Win32)</strong> apps on <strong>Windows 10 PC</strong></p>
+<h2 id="creating-your-own-test-script">Creating Your Own Test Script</h2>
+<p>You can choose any programming language or tools supported by Appium/Selenium to write your test scripts. In the example below, we will author the test script in C# using Microsoft Visual Studio 2015.</p>
+<h3 id="create-test-project">Create Test Project</h3>
+<ol>
+<li>Open <strong>Microsoft Visual Studio 2015</strong></li>
+<li>Create the test project and solution. I.e. select <strong>New Project &gt; Templates &gt; Visual C# &gt; Test &gt; Unit Test Project</strong></li>
+<li>Once created, select <strong>Project &gt; Manage NuGet Packages... &gt; Browse</strong> and search for <strong>Appium.WebDriver</strong></li>
+<li>Install the <strong>Appium.WebDriver</strong> NuGet packages for the test project</li>
+<li>Start writing your test (see sample code under [samples])</li>
+</ol>
+<h3 id="universal-windows-platform-app-testing">Universal Windows Platform App Testing</h3>
+<p>To test a UWP app, you can use any Selenium supported language and simply specify the <strong>Application Id</strong> for the app under test in the <strong>app</strong> capabilities entry. Below is an example of creating a test session for Windows <strong>Alarms &amp; Clock</strong> app written in C#:</p>
+<pre><code class="c#">// Launch the AlarmClock app
+DesiredCapabilities appCapabilities = new DesiredCapabilities();
+appCapabilities.SetCapability(&quot;app&quot;, &quot;Microsoft.WindowsAlarms_8wekyb3d8bbwe!App&quot;);
+AlarmClockSession = new WindowsDriver&lt;WindowsElement&gt;(new Uri(&quot;http://127.0.0.1:4723&quot;), appCapabilities);
+// Control the AlarmClock app
+AlarmClockSession.FindElementByAccessibilityId(&quot;AddAlarmButton&quot;).Click();
+AlarmClockSession.FindElementByAccessibilityId(&quot;AlarmNameTextBox&quot;).Clear();
+</code></pre>
+
+<p>When testing the application you authored yourself, you can find the <strong>Application Id</strong> in the generetated <code>AppX\vs.appxrecipe</code> file under <code>RegisteredUserNmodeAppID</code> node. E.g. <code>c24c8163-548e-4b84-a466-530178fc0580_scyf5npe3hv32!App</code></p>
+<h3 id="classic-windows-app-testing">Classic Windows App Testing</h3>
+<p>To test a classic Windows app, you can also use any Selenium supported language and specify the <strong>full executable path</strong> for the app under test in the <strong>app</strong> capabilities entry. Below is an example of creating a test session for Windows <strong>Notepad</strong> app:</p>
+<pre><code class="c#">// Launch Notepad
+DesiredCapabilities appCapabilities = new DesiredCapabilities();
+appCapabilities.SetCapability(&quot;app&quot;, @&quot;C:\Windows\System32\notepad.exe&quot;);
+NotepadSession = new WindowsDriver&lt;WindowsElement&gt;(new Uri(&quot;http://127.0.0.1:4723&quot;), appCapabilities);
+// Control the AlarmClock app
+NotepadSession.FindElementByClassName(&quot;Edit&quot;).SendKeys(&quot;This is some text&quot;);
+</code></pre>
+
+<h3 id="starting-a-session">Starting a Session</h3>
+<p>Note that you should additionally use these capabilities to ensure you are getting a Windows App automation session:</p>
+<p><code>platformName</code>: <code>Windows</code>
+<code>deviceName</code>: <code>WindowsPC</code></p>
+<h3 id="inspecting-ui-elements">Inspecting UI Elements</h3>
+<p>Microsoft Visual Studio 2015 by default includes Windows SDK that provides great tool to inspect the application you are testing. This tool allows you to see every UI element/node that you can query using Windows Application Driver. This <strong>inspect.exe</strong> tool can be found under the Windows SDK folder such as <code>C:\Program Files (x86)\Windows Kits\10\bin\x86</code></p>
+<table>
+<thead>
+<tr>
+<th>Locator Strategy</th>
+<th>Matched Attribute</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>accessibility id</td>
+<td>AutomationId</td>
+</tr>
+<tr>
+<td>class name</td>
+<td>ClassName</td>
+</tr>
+<tr>
+<td>name</td>
+<td>Name</td>
+</tr>
+</tbody>
+</table></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

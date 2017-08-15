@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Iwd xcode7 - Appium</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Appium</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About appium <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about-appium/appium-clients/">Appium clients</a>
+</li>
+                            
+<li >
+    <a href="../../about-appium/intro/">Intro</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../chromedriver/">Chromedriver</a>
+</li>
+                            
+<li >
+    <a href="../cross-domain-iframes/">Cross domain iframes</a>
+</li>
+                            
+<li >
+    <a href="../event-timings/">Event timings</a>
+</li>
+                            
+<li >
+    <a href="../grid/">Grid</a>
+</li>
+                            
+<li >
+    <a href="../hybrid/">Hybrid</a>
+</li>
+                            
+<li >
+    <a href="../ios-touch-id/">Ios touch id</a>
+</li>
+                            
+<li >
+    <a href="../ios-webkit-debug-proxy/">Ios webkit debug proxy</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Iwd xcode7</a>
+</li>
+                            
+<li >
+    <a href="../migrating-to-1-0/">Migrating to 1 0</a>
+</li>
+                            
+<li >
+    <a href="../migrating-to-xcuitest/">Migrating to xcuitest</a>
+</li>
+                            
+<li >
+    <a href="../settings/">Settings</a>
+</li>
+                            
+<li >
+    <a href="../wda-custom-server/">Wda custom server</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../contributing/appium-from-source/">Appium from source</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/appium-packages/">Appium packages</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/credits/">Credits</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/developers-overview/">Developers overview</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/gulp/">Gulp</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/how-to-write-docs/">How to write docs</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide-2.0/">Style guide 2.0</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide/">Style guide</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/version-branch-release/">Version branch release</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../setup/android-hax-emulator/">Android hax emulator</a>
+</li>
+                            
+<li >
+    <a href="../../setup/android-setup/">Android setup</a>
+</li>
+                            
+<li >
+    <a href="../../setup/ios-deploy/">Ios deploy</a>
+</li>
+                            
+<li >
+    <a href="../../setup/parallel_tests/">Parallel tests</a>
+</li>
+                            
+<li >
+    <a href="../../setup/platform-support/">Platform support</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-android/">Real devices android</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-ios/">Real devices ios</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices/">Real devices</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-linux/">Running on linux</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-osx/">Running on osx</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-windows/">Running on windows</a>
+</li>
+                            
+<li >
+    <a href="../../setup/troubleshooting/">Troubleshooting</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Writing and running <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../writing-and-running/appium-bindings/">Appium bindings</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/caps/">Caps</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/default-capabilities-arg/">Default capabilities arg</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/espresso/">Espresso</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/finding-elements/">Finding elements</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/ios-xctest-mobile-gestures/">Ios xctest mobile gestures</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/ios_predicate/">Ios predicate</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/mobile-web/">Mobile web</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/network_connection/">Network connection</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/reset-strategies/">Reset strategies</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/running-tests/">Running tests</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/safari-launcher/">Safari launcher</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/server-args/">Server args</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/touch-actions/">Touch actions</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/uiautomator2/">Uiautomator2</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/uiautomator_uiselector/">Uiautomator uiselector</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/unicode/">Unicode</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/windows-app-testing/">Windows app testing</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../ios-webkit-debug-proxy/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../migrating-to-1-0/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#setting-up-instruments-without-delay-iwd-for-xcode-7-and-ios-90">Setting up instruments without delay (iwd) for xcode 7 and iOS &gt;= 9.0</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="setting-up-instruments-without-delay-iwd-for-xcode-7-and-ios-90">Setting up instruments without delay (iwd) for xcode 7 and iOS &gt;= 9.0</h2>
+<p>For iOS &gt;= 9.0 instruments without delay (iwd) does not work by passing binaries through the command line (appium does this under the hood for xcode &lt; 7). See <a href="https://github.com/lawrencelomax/instruments-without-delay/tree/xcode7-quirks#xcode-7--ios-9-support">iwd</a></p>
+<p>For enabling iwd for xcode &gt;= 7,
+- Check out <a href="https://github.com/appium/appium-instruments">appium-instruments</a>
+- Run <code>xcode-iwd.sh</code> present in <code>&lt;appium-instruments&gt;/bin/</code>, with arguments as indicated below:</p>
+<pre><code>sh &lt;appium-instruments&gt;/bin/xcode-iwd.sh &lt;path to xcode&gt; &lt;path to appium-instruments&gt;
+</code></pre>
+
+<p>eg. <code>sh ./bin/xcode-iwd.sh /Applications/Xcode.app /Users/xyz/appium-instruments/</code></p>
+<p>Note: iwd with Xcode 7 will only work for iOS &gt;= 9.0, you can switch to an older version of Xcode for iOS &lt; 9.0</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

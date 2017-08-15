@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>/about-appium/appium-clients/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/about-appium/intro/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/advanced/chromedriver/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/advanced/cross-domain-iframes/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/advanced/event-timings/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/advanced/grid/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/advanced/hybrid/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/advanced/ios-touch-id/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/advanced/ios-webkit-debug-proxy/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/advanced/iwd_xcode7/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/advanced/migrating-to-1-0/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/advanced/migrating-to-xcuitest/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/advanced/settings/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/advanced/wda-custom-server/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/contributing/appium-from-source/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/contributing/appium-packages/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/contributing/credits/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/contributing/developers-overview/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/contributing/gulp/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/contributing/how-to-write-docs/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/contributing/style-guide-2.0/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/contributing/style-guide/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/contributing/version-branch-release/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/setup/android-hax-emulator/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/setup/android-setup/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/setup/ios-deploy/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/setup/parallel_tests/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/setup/platform-support/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/setup/real-devices-android/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/setup/real-devices-ios/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/setup/real-devices/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/setup/running-on-linux/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/setup/running-on-osx/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/setup/running-on-windows/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/setup/troubleshooting/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/writing-and-running/appium-bindings/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/writing-and-running/caps/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/writing-and-running/default-capabilities-arg/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/writing-and-running/espresso/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/writing-and-running/finding-elements/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/writing-and-running/ios-xctest-mobile-gestures/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/writing-and-running/ios_predicate/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/writing-and-running/mobile-web/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/writing-and-running/network_connection/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/writing-and-running/reset-strategies/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/writing-and-running/running-tests/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/writing-and-running/safari-launcher/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/writing-and-running/server-args/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/writing-and-running/touch-actions/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/writing-and-running/uiautomator2/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/writing-and-running/uiautomator_uiselector/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/writing-and-running/unicode/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/writing-and-running/windows-app-testing/</loc>
+     <lastmod>2017-08-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>

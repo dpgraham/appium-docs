@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Safari launcher - Appium</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Appium</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About appium <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about-appium/appium-clients/">Appium clients</a>
+</li>
+                            
+<li >
+    <a href="../../about-appium/intro/">Intro</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../advanced/chromedriver/">Chromedriver</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/cross-domain-iframes/">Cross domain iframes</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/event-timings/">Event timings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/grid/">Grid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/hybrid/">Hybrid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-touch-id/">Ios touch id</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-webkit-debug-proxy/">Ios webkit debug proxy</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/iwd_xcode7/">Iwd xcode7</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-1-0/">Migrating to 1 0</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-xcuitest/">Migrating to xcuitest</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/settings/">Settings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/wda-custom-server/">Wda custom server</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../contributing/appium-from-source/">Appium from source</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/appium-packages/">Appium packages</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/credits/">Credits</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/developers-overview/">Developers overview</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/gulp/">Gulp</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/how-to-write-docs/">How to write docs</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide-2.0/">Style guide 2.0</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide/">Style guide</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/version-branch-release/">Version branch release</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../setup/android-hax-emulator/">Android hax emulator</a>
+</li>
+                            
+<li >
+    <a href="../../setup/android-setup/">Android setup</a>
+</li>
+                            
+<li >
+    <a href="../../setup/ios-deploy/">Ios deploy</a>
+</li>
+                            
+<li >
+    <a href="../../setup/parallel_tests/">Parallel tests</a>
+</li>
+                            
+<li >
+    <a href="../../setup/platform-support/">Platform support</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-android/">Real devices android</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-ios/">Real devices ios</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices/">Real devices</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-linux/">Running on linux</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-osx/">Running on osx</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-windows/">Running on windows</a>
+</li>
+                            
+<li >
+    <a href="../../setup/troubleshooting/">Troubleshooting</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Writing and running <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../appium-bindings/">Appium bindings</a>
+</li>
+                            
+<li >
+    <a href="../caps/">Caps</a>
+</li>
+                            
+<li >
+    <a href="../default-capabilities-arg/">Default capabilities arg</a>
+</li>
+                            
+<li >
+    <a href="../espresso/">Espresso</a>
+</li>
+                            
+<li >
+    <a href="../finding-elements/">Finding elements</a>
+</li>
+                            
+<li >
+    <a href="../ios-xctest-mobile-gestures/">Ios xctest mobile gestures</a>
+</li>
+                            
+<li >
+    <a href="../ios_predicate/">Ios predicate</a>
+</li>
+                            
+<li >
+    <a href="../mobile-web/">Mobile web</a>
+</li>
+                            
+<li >
+    <a href="../network_connection/">Network connection</a>
+</li>
+                            
+<li >
+    <a href="../reset-strategies/">Reset strategies</a>
+</li>
+                            
+<li >
+    <a href="../running-tests/">Running tests</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Safari launcher</a>
+</li>
+                            
+<li >
+    <a href="../server-args/">Server args</a>
+</li>
+                            
+<li >
+    <a href="../touch-actions/">Touch actions</a>
+</li>
+                            
+<li >
+    <a href="../uiautomator2/">Uiautomator2</a>
+</li>
+                            
+<li >
+    <a href="../uiautomator_uiselector/">Uiautomator uiselector</a>
+</li>
+                            
+<li >
+    <a href="../unicode/">Unicode</a>
+</li>
+                            
+<li >
+    <a href="../windows-app-testing/">Windows app testing</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../running-tests/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../server-args/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#mobile-web-on-ios-93-and-below-real-devices-safarilauncher">Mobile Web on iOS 9.3 and below Real Devices: SafariLauncher</a></li>
+            <li><a href="#automatic-safarilauncher-configuration">Automatic SafariLauncher configuration</a></li>
+            <li><a href="#manual-safarilauncher-configuration">Manual SafariLauncher configuration</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="mobile-web-on-ios-93-and-below-real-devices-safarilauncher">Mobile Web on iOS 9.3 and below Real Devices: SafariLauncher</h2>
+<p>Running mobile web tests on iOS real devices with iOS 9.3 or below, using Instruments,
+requires the introduction of a third-party app, <a href="https://github.com/snevesbarros/SafariLauncher">SafariLauncher</a>.
+This is necessary because with Instruments there is no way to start the Safari
+app on the device. The <code>SafariLauncher</code> app just launches, and then launches
+Safari. Simple!</p>
+<p>In some configurations, Appium is able to automatically build, sign, and install
+<code>SafariLauncher</code> as it needs, and there is nothing else necessary to be done. If,
+however, this is not the case, as is more often so with later versions of
+<a href="https://developer.apple.com/xcode/">Xcode</a>, the following configuration needs to
+be done before Safari tests on real devices can be successfully run.</p>
+<h3 id="automatic-safarilauncher-configuration">Automatic SafariLauncher configuration</h3>
+<p>The only thing needed for automatic <code>SafariLauncher</code> configuration is to create
+a <strong>provisioning profile</strong> that can be used to deploy the <code>SafariLauncher</code> App.
+This requires, in particular, a wildcard certificate, which is not possible if
+your Apple developer account is a free one. If that is the case, skip to the
+manual configuration below.</p>
+<p>To create a profile for the launcher go into the <strong>Apple Developers Member Center</strong> and:</p>
+<ul>
+<li><strong>Step 1:</strong> Create a <strong>new App Id</strong> and select the WildCard App ID option and set it to "*"</li>
+<li><strong>Step 2:</strong> Create a <strong>new Development Profile</strong> and for App Id select the one created in step 1.</li>
+<li><strong>Step 3:</strong> Select your <strong>certificate(s) and device(s)</strong> and click next.</li>
+<li><strong>Step 4:</strong> Set the profile name and <strong>generate the profile</strong>.</li>
+<li><strong>Step 5:</strong> Download the profile and open it with a text editor.</li>
+<li><strong>Step 6:</strong> Search for the <strong>UUID</strong> and the string for it is your <strong>identity code</strong>.</li>
+</ul>
+<p>Now simply include your UDID and device name in your desired capabilities:</p>
+<pre><code class="js">{
+  udid: '...',
+  deviceName: '...',
+  platformName: 'iOS',
+  platformVersion: '9.3',
+  browserName: 'Safari'
+}
+</code></pre>
+
+<h3 id="manual-safarilauncher-configuration">Manual SafariLauncher configuration</h3>
+<p><strong>Note:</strong> This procedure assumes you have <a href="https://developer.apple.com/xcode/">Xcode</a> 7.3 or 7.3.1.</p>
+<p>It is possible to use the version of <a href="https://github.com/snevesbarros/SafariLauncher">SafariLauncher</a>
+that comes with the <a href="https://github.com/appium/appium-ios-driver">appium-ios-driver</a>,
+but if you do, each time you update Appium the procedure will have to be done again.</p>
+<p>To get a local copy of <code>SafariLauncher</code>, first clone it from <a href="https://github.com/">GitHub</a>:</p>
+<pre><code class="bash">git clone https://github.com/snevesbarros/SafariLauncher.git
+</code></pre>
+
+<p>Once you have a local copy of the source code for the <code>SafariLauncher</code> app, open
+<a href="https://developer.apple.com/xcode/">Xcode</a> and then open the <code>SafariLauncher</code> project</p>
+<p><img alt="Opening SafariLauncher project" src="../safari-launcher/opening.png" /></p>
+<p>In the <code>SafariLauncher</code> target pane you will see an error, saying that there needs
+to be a provisioning profile for this app</p>
+<p><img alt="No provisioning profile error" src="../safari-launcher/no-provisioning-profile.png" /></p>
+<p>In order to fix this, you first need to enter a "Bundle Identifier" for the app. The default
+expected by Appium is <code>com.bytearc.SafariLauncher</code>, but this might not be available
+for you to build. In that case, choose something else, and make note of it. Then
+choose a "Team", and allow the provisioning profile to be created</p>
+<p><img alt="Fixing provisioning profile error" src="../safari-launcher/changing-bundleid.png" /></p>
+<p>Finally, make sure your device is connected to the computer, and choose it as the
+target</p>
+<p><img alt="Choosing device" src="../safari-launcher/choosing-target.png" /></p>
+<p>And run the build and install actions to compile the app and push it onto your
+device</p>
+<p><img alt="Running SafariLauncher" src="../safari-launcher/running.png" /></p>
+<p>Now you have a working <code>SafariLauncher</code> on your device. The app itself is a plain
+screen that will launch <code>Safari</code> at the click of a button</p>
+<p><img alt="SafariLauncher on device" src="../safari-launcher/safarilauncher.png" /></p>
+<p>The last step is only necessary if you chose a bundle identifier for the app that
+is different from the default (<code>com.bytearc.SafariLauncher</code>). If you did, it is
+necessary to send that to Appium when creating a session, using the <code>bundleId</code>
+desired capability:</p>
+<pre><code class="js">{
+  udid: '...',
+  deviceName: '...',
+  platformName: 'iOS',
+  platformVersion: '9.3',
+  browserName: 'Safari',
+  bundleId: 'com.imurchie.SafariLauncher'
+}
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

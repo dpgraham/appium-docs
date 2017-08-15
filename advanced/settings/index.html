@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Settings - Appium</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Appium</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About appium <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about-appium/appium-clients/">Appium clients</a>
+</li>
+                            
+<li >
+    <a href="../../about-appium/intro/">Intro</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../chromedriver/">Chromedriver</a>
+</li>
+                            
+<li >
+    <a href="../cross-domain-iframes/">Cross domain iframes</a>
+</li>
+                            
+<li >
+    <a href="../event-timings/">Event timings</a>
+</li>
+                            
+<li >
+    <a href="../grid/">Grid</a>
+</li>
+                            
+<li >
+    <a href="../hybrid/">Hybrid</a>
+</li>
+                            
+<li >
+    <a href="../ios-touch-id/">Ios touch id</a>
+</li>
+                            
+<li >
+    <a href="../ios-webkit-debug-proxy/">Ios webkit debug proxy</a>
+</li>
+                            
+<li >
+    <a href="../iwd_xcode7/">Iwd xcode7</a>
+</li>
+                            
+<li >
+    <a href="../migrating-to-1-0/">Migrating to 1 0</a>
+</li>
+                            
+<li >
+    <a href="../migrating-to-xcuitest/">Migrating to xcuitest</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Settings</a>
+</li>
+                            
+<li >
+    <a href="../wda-custom-server/">Wda custom server</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../contributing/appium-from-source/">Appium from source</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/appium-packages/">Appium packages</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/credits/">Credits</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/developers-overview/">Developers overview</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/gulp/">Gulp</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/how-to-write-docs/">How to write docs</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide-2.0/">Style guide 2.0</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide/">Style guide</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/version-branch-release/">Version branch release</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../setup/android-hax-emulator/">Android hax emulator</a>
+</li>
+                            
+<li >
+    <a href="../../setup/android-setup/">Android setup</a>
+</li>
+                            
+<li >
+    <a href="../../setup/ios-deploy/">Ios deploy</a>
+</li>
+                            
+<li >
+    <a href="../../setup/parallel_tests/">Parallel tests</a>
+</li>
+                            
+<li >
+    <a href="../../setup/platform-support/">Platform support</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-android/">Real devices android</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-ios/">Real devices ios</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices/">Real devices</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-linux/">Running on linux</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-osx/">Running on osx</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-windows/">Running on windows</a>
+</li>
+                            
+<li >
+    <a href="../../setup/troubleshooting/">Troubleshooting</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Writing and running <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../writing-and-running/appium-bindings/">Appium bindings</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/caps/">Caps</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/default-capabilities-arg/">Default capabilities arg</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/espresso/">Espresso</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/finding-elements/">Finding elements</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/ios-xctest-mobile-gestures/">Ios xctest mobile gestures</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/ios_predicate/">Ios predicate</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/mobile-web/">Mobile web</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/network_connection/">Network connection</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/reset-strategies/">Reset strategies</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/running-tests/">Running tests</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/safari-launcher/">Safari launcher</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/server-args/">Server args</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/touch-actions/">Touch actions</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/uiautomator2/">Uiautomator2</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/uiautomator_uiselector/">Uiautomator uiselector</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/unicode/">Unicode</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/windows-app-testing/">Windows app testing</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../migrating-to-xcuitest/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../wda-custom-server/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#settings">Settings</a></li>
+            <li><a href="#supported-settings">Supported Settings</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="settings">Settings</h2>
+<p>Settings are a new concept introduced by appium. They are currently not a part of the Mobile JSON Wire Protocol, or the Webdriver spec.</p>
+<p>Settings are a way to specify the behavior of the appium server.</p>
+<p>Settings are:
+ - Mutable, they can be changed during a session
+ - Only relevant during the session they are applied. They are reset for each new session.
+ - Control the way the appium server behaves during test automation. They do not apply to controlling the app or device under test.</p>
+<p>An example of a setting would be <code>ignoreUnimportantViews</code> for Android. Android can be set to ignore elements in the View Hierarchy which it deems irrelevant. Setting this can cause tests to run faster. A user who <em>wants</em> to access the ignored elements however, would want to disable <code>ignoreUnimportantViews</code>, and reenable it afterwards.</p>
+<p>Another example of a use-case for settings would be telling appium to ignore elements which are not visible.</p>
+<p>Settings are implemented via the following API endpoints:</p>
+<p><strong>POST</strong> /session/:sessionId/appium/settings</p>
+<blockquote>
+<p>Expects a JSON hash of settings, where keys correspond to setting names, and values to the value of the setting.</p>
+</blockquote>
+<pre><code>{
+  settings: {
+   ignoreUnimportantViews : true
+  }
+}
+</code></pre>
+
+<p><strong>GET</strong> /session/:sessionId/appium/settings</p>
+<blockquote>
+<p>Returns a JSON hash of all the currently specified settings.</p>
+</blockquote>
+<pre><code>{
+  ignoreUnimportantViews : true
+}
+</code></pre>
+
+<p>Note that the actual commands you would use in your test script differ based on the language; see the specific Appium client documention for more information.</p>
+<h3 id="supported-settings">Supported Settings</h3>
+<p><strong>"ignoreUnimportantViews"</strong> - Boolean which sets whether Android devices should use <code>setCompressedLayoutHeirarchy()</code> which ignores all views which are marked IMPORTANT_FOR_ACCESSIBILITY_NO or IMPORTANT_FOR_ACCESSIBILITY_AUTO (and have been deemed not important by the system), in an attempt to make things less confusing or faster.</p>
+<h4 id="android-uiautomator-configurator">Android UiAutomator Configurator</h4>
+<p>sets <a href="https://developer.android.com/reference/android/support/test/uiautomator/Configurator.html">UiAutomator Configurator</a> timeouts and delays in Android devices. only works in Android API 18 and above.</p>
+<p><strong>"actionAcknowledgmentTimeout"</strong> - Int which is the same as <a href="https://developer.android.com/reference/android/support/test/uiautomator/Configurator.html#setActionAcknowledgmentTimeout(long)">setActionAcknowledgmentTimeout</a>. If a negative value is given, it would set to default(3 * 1000 milliseconds)</p>
+<p><strong>"keyInjectionDelay"</strong> - Int which is the same as <a href="https://developer.android.com/reference/android/support/test/uiautomator/Configurator.html#setKeyInjectionDelay(long)">setKeyInjectionDelay</a>. If a negative value is given, it would set to default(0 milliseconds)</p>
+<p><strong>"scrollAcknowledgmentTimeout"</strong> - Int which is the same as <a href="https://developer.android.com/reference/android/support/test/uiautomator/Configurator.html#setScrollAcknowledgmentTimeout(long)">setScrollAcknowledgmentTimeout</a>. If a negative value is given, it would set to default(200 milliseconds)</p>
+<p><strong>"waitForIdleTimeout"</strong> - Int which is the same as <a href="https://developer.android.com/reference/android/support/test/uiautomator/Configurator.html#setWaitForIdleTimeout(long)">setWaitForIdleTimeout</a>. If a negative value is given, it would set to default(10 * 1000 milliseconds)</p>
+<p><strong>"waitForSelectorTimeout"</strong> - Int which is the same as <a href="https://developer.android.com/reference/android/support/test/uiautomator/Configurator.html#setWaitForSelectorTimeout(long)">setWaitForSelectorTimeout</a>. If a negative value is given, it would set to default(10 * 1000 milliseconds)</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

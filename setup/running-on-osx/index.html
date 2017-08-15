@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Running on osx - Appium</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Appium</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About appium <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about-appium/appium-clients/">Appium clients</a>
+</li>
+                            
+<li >
+    <a href="../../about-appium/intro/">Intro</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../advanced/chromedriver/">Chromedriver</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/cross-domain-iframes/">Cross domain iframes</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/event-timings/">Event timings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/grid/">Grid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/hybrid/">Hybrid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-touch-id/">Ios touch id</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-webkit-debug-proxy/">Ios webkit debug proxy</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/iwd_xcode7/">Iwd xcode7</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-1-0/">Migrating to 1 0</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-xcuitest/">Migrating to xcuitest</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/settings/">Settings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/wda-custom-server/">Wda custom server</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../contributing/appium-from-source/">Appium from source</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/appium-packages/">Appium packages</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/credits/">Credits</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/developers-overview/">Developers overview</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/gulp/">Gulp</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/how-to-write-docs/">How to write docs</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide-2.0/">Style guide 2.0</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide/">Style guide</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/version-branch-release/">Version branch release</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../android-hax-emulator/">Android hax emulator</a>
+</li>
+                            
+<li >
+    <a href="../android-setup/">Android setup</a>
+</li>
+                            
+<li >
+    <a href="../ios-deploy/">Ios deploy</a>
+</li>
+                            
+<li >
+    <a href="../parallel_tests/">Parallel tests</a>
+</li>
+                            
+<li >
+    <a href="../platform-support/">Platform support</a>
+</li>
+                            
+<li >
+    <a href="../real-devices-android/">Real devices android</a>
+</li>
+                            
+<li >
+    <a href="../real-devices-ios/">Real devices ios</a>
+</li>
+                            
+<li >
+    <a href="../real-devices/">Real devices</a>
+</li>
+                            
+<li >
+    <a href="../running-on-linux/">Running on linux</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Running on osx</a>
+</li>
+                            
+<li >
+    <a href="../running-on-windows/">Running on windows</a>
+</li>
+                            
+<li >
+    <a href="../troubleshooting/">Troubleshooting</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Writing and running <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../writing-and-running/appium-bindings/">Appium bindings</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/caps/">Caps</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/default-capabilities-arg/">Default capabilities arg</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/espresso/">Espresso</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/finding-elements/">Finding elements</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/ios-xctest-mobile-gestures/">Ios xctest mobile gestures</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/ios_predicate/">Ios predicate</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/mobile-web/">Mobile web</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/network_connection/">Network connection</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/reset-strategies/">Reset strategies</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/running-tests/">Running tests</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/safari-launcher/">Safari launcher</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/server-args/">Server args</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/touch-actions/">Touch actions</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/uiautomator2/">Uiautomator2</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/uiautomator_uiselector/">Uiautomator uiselector</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/unicode/">Unicode</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/windows-app-testing/">Windows app testing</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../running-on-linux/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../running-on-windows/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#running-appium-on-mac-os-x">Running Appium on Mac OS X</a></li>
+            <li><a href="#system-setup-ios">System setup (iOS)</a></li>
+            <li><a href="#authorizing-ios-on-the-computer">Authorizing iOS on the computer</a></li>
+            <li><a href="#testing-against-multiple-ios-sdks">Testing against multiple iOS SDKs</a></li>
+            <li><a href="#testing-using-xcode-8-including-ios-10-with-xcuitest">Testing using Xcode 8 (including iOS 10) with XCUITest</a></li>
+            <li><a href="#testing-mac-apps">Testing Mac apps</a></li>
+            <li><a href="#system-setup-android">System setup (Android)</a></li>
+            <li><a href="#running-ios-tests-on-os-x-using-jenkins">Running iOS tests on OS X using Jenkins</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="running-appium-on-mac-os-x">Running Appium on Mac OS X</h2>
+<p>Appium on OS X supports iOS and Android testing.</p>
+<h3 id="system-setup-ios">System setup (iOS)</h3>
+<ul>
+<li>Appium requires Mac OS X 10.10 or greater.</li>
+<li>Make sure you have Xcode and the iOS SDK(s) installed. Xcode version 7.1 is
+  recommended as earlier versions of Xcode are limited in which versions of iOS
+  they can test against. See the next section for more detail.</li>
+<li>You need to authorize use of the iOS Simulator. See <a href="#authorizing-ios-on-the-computer">below</a>.</li>
+<li>If you're on Xcode 7.x and up, Instruments Without Delay (IWD) does not work.
+  You can enable IWD (which will significantly speed up your tests) using <a href="/docs/en/advanced-concepts/iwd_xcode7.md">this
+  method</a></li>
+<li>If you're on Xcode 6, you need to launch each simulator you intend to use
+  with appium in advance, and change the default to actually show the soft
+  keyboard if you want sendKeys to work. You can do this by clicking on any
+  textfield and hitting command-K until you notice the soft keyboard show up.</li>
+<li>If you're on Xcode 6, you have a feature in Xcode called Devices
+  (command-shift-2). You need to make sure that whichever deviceName you choose
+  to use with Appium in your capabilities, there is only one of those per sdk
+  version. In other words, if you send in a deviceName cap of "iPhone 5s" and
+  a platformVersion cap of "8.0", you need to make sure that there is exactly
+  one device with the name "iPhone 5s" and the 8.0 sdk in your devices list.
+  Otherwise, Appium won't know which one to use.</li>
+<li>In iOS 8, devices each have their own setting which enables or disables
+  UIAutomation. It lives in a "Developer" view in the Settings app. You need to
+  verify that UIAutomation is enabled in this view before the simulator or
+  device can be automated.</li>
+</ul>
+<h3 id="authorizing-ios-on-the-computer">Authorizing iOS on the computer</h3>
+<p>You need to authorize use of the iOS Simulator by running the <code>authorize-ios</code>
+binary made available through <code>npm</code>. Install the program by running</p>
+<pre><code>npm install -g authorize-ios
+</code></pre>
+
+<p>And the invoke the program using</p>
+<pre><code>sudo authorize-ios
+</code></pre>
+
+<p>If you are running <a href="https://github.com/appium/appium-dot-app">Appium.app</a>, you can
+authorize iOS through the GUI.</p>
+<p>You need to do this every time you install a new version of Xcode.</p>
+<h3 id="testing-against-multiple-ios-sdks">Testing against multiple iOS SDKs</h3>
+<p>Xcode version 7.1 allows for automatic testing against iOS versions 7.1 and later.</p>
+<p>If you're using multiple Xcode versions, you can switch between them using:</p>
+<pre><code>sudo xcode-select --switch &amp;lt;path to required xcode&amp;gt;
+</code></pre>
+<h3 id="testing-using-xcode-8-including-ios-10-with-xcuitest">Testing using Xcode 8 (including iOS 10) with XCUITest</h3>
+<p>In order to automate iOS devices with Xcode 8 (which includes all testing of iOS 10+),
+you need to install the <a href="https://github.com/Carthage/Carthage">Carthage</a> dependency
+manager:</p>
+<pre><code>brew install carthage
+</code></pre>
+
+<h3 id="testing-mac-apps">Testing Mac apps</h3>
+<p>Currently, the Mac app driver for appium does not ship with the AppiumForMac binary, which means, in order to automate Mac apps you must manually install the AppiumForMac application and grant it the appropriate OS X Accessibility permissions.</p>
+<p>To Install Appium for Mac:
+1. <a href="https://github.com/appium/appium-for-mac/releases/tag/0.2.0">Download a release</a> and unzip the application into your <code>/Applications</code> folder
+2. Follow the <a href="https://github.com/appium/appium-for-mac#installation">brief supplemental installation instructions</a> to enable appium to have access to OS X's Accessibility APIs</p>
+<p>For more information on using Appium for mac, checkout the <a href="https://github.com/appium/appium-for-mac#appium-for-mac">docs</a>.</p>
+<h3 id="system-setup-android">System setup (Android)</h3>
+<p>Instructions for setting up Android and running tests on Mac OS X are the same as
+those on Linux. See the <a href="/docs/en/appium-setup/android-setup.md">Android setup docs</a>.</p>
+<h3 id="running-ios-tests-on-os-x-using-jenkins">Running iOS tests on OS X using Jenkins</h3>
+<p>First download the jenkins-cli.jar and verify the Mac successfully connects to Jenkins master. Ensure you've run the <code>authorize-ios</code> command mentioned above.</p>
+<p><code>wget https://jenkins.ci.cloudbees.com/jnlpJars/jenkins-cli.jar</code></p>
+<pre><code>java -jar jenkins-cli.jar \
+ -s https://team-appium.ci.cloudbees.com \
+ -i ~/.ssh/id_rsa \
+ on-premise-executor \
+ -fsroot ~/jenkins \
+ -labels osx \
+ -name mac_appium
+ ```
+
+Next define a LaunchAgent for Jenkins to launch automatically on login. A LaunchDaemon will not work because daemons don't have GUI access. Make sure the plist doesn't contain the `SessionCreate` or `User` key as that may prevent tests from running. You'll see a `Failed to authorize rights` error if misconfigured.
+
+</code></pre>
+
+<p>$ sudo nano /Library/LaunchAgents/com.jenkins.ci.plist
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.jenkins.ci</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>java</string>
+        <string>-Djava.awt.headless=true</string>
+        <string>-jar</string>
+        <string>/Users/appium/jenkins/jenkins-cli.jar</string>
+        <string>-s</string>
+        <string>https://instructure.ci.cloudbees.com</string>
+        <string>on-premise-executor</string>
+        <string>-fsroot</string>
+        <string>/Users/appium/jenkins</string>
+        <string>-executors</string>
+        <string>1</string>
+        <string>-labels</string>
+        <string>mac</string>
+        <string>-name</string>
+        <string>mac_appium</string>
+        <string>-persistent</string>
+    </array>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Users/appium/jenkins/stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/appium/jenkins/error.log</string>
+</dict>
+</plist></p>
+<pre><code>
+Finally set the owner, permissions, and then start the agent.
+
+</code></pre>
+
+<p>sudo chown root:wheel /Library/LaunchAgents/com.jenkins.ci.plist
+sudo chmod 644 /Library/LaunchAgents/com.jenkins.ci.plist</p>
+<p>launchctl load /Library/LaunchAgents/com.jenkins.ci.plist
+launchctl start com.jenkins.ci</p>
+<pre><code>
+
+### Files generated by iOS test runs
+
+Testing on iOS generates files that can sometimes get large. These include logs,
+temporary files, and derived data from Xcode runs. Generally the following locations
+are where they are found, should they need to be deleted:
+
+</code></pre>
+
+<p>$HOME/Library/Logs/CoreSimulator/*</p>
+<pre><code>
+For Instruments-based tests (iOS _not_ using `XCUITest` as `automationName`):
+
+</code></pre>
+
+<p>/Library/Caches/com.apple.dt.instruments/*</p>
+<pre><code>
+For XCUITest-based tests:
+
+</code></pre>
+
+<p>$HOME/Library/Developer/Xcode/DerivedData/*
+```</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

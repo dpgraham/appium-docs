@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Unicode - Appium</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Appium</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About appium <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about-appium/appium-clients/">Appium clients</a>
+</li>
+                            
+<li >
+    <a href="../../about-appium/intro/">Intro</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../advanced/chromedriver/">Chromedriver</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/cross-domain-iframes/">Cross domain iframes</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/event-timings/">Event timings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/grid/">Grid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/hybrid/">Hybrid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-touch-id/">Ios touch id</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-webkit-debug-proxy/">Ios webkit debug proxy</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/iwd_xcode7/">Iwd xcode7</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-1-0/">Migrating to 1 0</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-xcuitest/">Migrating to xcuitest</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/settings/">Settings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/wda-custom-server/">Wda custom server</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../contributing/appium-from-source/">Appium from source</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/appium-packages/">Appium packages</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/credits/">Credits</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/developers-overview/">Developers overview</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/gulp/">Gulp</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/how-to-write-docs/">How to write docs</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide-2.0/">Style guide 2.0</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide/">Style guide</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/version-branch-release/">Version branch release</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../setup/android-hax-emulator/">Android hax emulator</a>
+</li>
+                            
+<li >
+    <a href="../../setup/android-setup/">Android setup</a>
+</li>
+                            
+<li >
+    <a href="../../setup/ios-deploy/">Ios deploy</a>
+</li>
+                            
+<li >
+    <a href="../../setup/parallel_tests/">Parallel tests</a>
+</li>
+                            
+<li >
+    <a href="../../setup/platform-support/">Platform support</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-android/">Real devices android</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-ios/">Real devices ios</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices/">Real devices</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-linux/">Running on linux</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-osx/">Running on osx</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-windows/">Running on windows</a>
+</li>
+                            
+<li >
+    <a href="../../setup/troubleshooting/">Troubleshooting</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Writing and running <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../appium-bindings/">Appium bindings</a>
+</li>
+                            
+<li >
+    <a href="../caps/">Caps</a>
+</li>
+                            
+<li >
+    <a href="../default-capabilities-arg/">Default capabilities arg</a>
+</li>
+                            
+<li >
+    <a href="../espresso/">Espresso</a>
+</li>
+                            
+<li >
+    <a href="../finding-elements/">Finding elements</a>
+</li>
+                            
+<li >
+    <a href="../ios-xctest-mobile-gestures/">Ios xctest mobile gestures</a>
+</li>
+                            
+<li >
+    <a href="../ios_predicate/">Ios predicate</a>
+</li>
+                            
+<li >
+    <a href="../mobile-web/">Mobile web</a>
+</li>
+                            
+<li >
+    <a href="../network_connection/">Network connection</a>
+</li>
+                            
+<li >
+    <a href="../reset-strategies/">Reset strategies</a>
+</li>
+                            
+<li >
+    <a href="../running-tests/">Running tests</a>
+</li>
+                            
+<li >
+    <a href="../safari-launcher/">Safari launcher</a>
+</li>
+                            
+<li >
+    <a href="../server-args/">Server args</a>
+</li>
+                            
+<li >
+    <a href="../touch-actions/">Touch actions</a>
+</li>
+                            
+<li >
+    <a href="../uiautomator2/">Uiautomator2</a>
+</li>
+                            
+<li >
+    <a href="../uiautomator_uiselector/">Uiautomator uiselector</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Unicode</a>
+</li>
+                            
+<li >
+    <a href="../windows-app-testing/">Windows app testing</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../uiautomator_uiselector/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../windows-app-testing/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#multi-lingual-support">Multi-lingual Support</a></li>
+            <li><a href="#finders">Finders</a></li>
+            <li><a href="#text-fields">Text Fields</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="multi-lingual-support">Multi-lingual Support</h2>
+<p>One problem with dealing with non-Latin characters programmatically is that, for characters
+with accents, there can be multiple ways of encoding the form. So, for the letter
+<code>é</code>, there are two encodings: a single combining character <code>é</code> (Unicode's
+<code>LATIN SMALL LETTER E WITH ACUTE</code>), and the combination of the letter <code>e</code> followed
+by the accent, <code>́</code> (<code>COMBINING ACUTE ACCENT</code>). In order to deal with this, there
+is <code>normalization</code>, an operation that makes <a href="http://www.unicode.org/reports/tr15/">"equivalent strings have a unique
+binary representation"</a>.</p>
+<p>Luckily, normalizing ASCII text (i.e., text that doesn't need to be normalized)
+does not cause any changes, and performing
+the operation multiple times does not have an effect. Thus a normalization
+function can be called on text without risking adverse effects.</p>
+<pre><code class="javascript">// javascript
+var unorm = require('unorm');
+
+'some ASCII text' === unorm.nfd('some ASCII text');
+unorm.nfd('Adélaïde Hervé') === unorm.nfd(unorm.nfd('Adélaïde Hervé'));
+</code></pre>
+
+<p>So, when dealing with unicode text within a test, you need to normalize, preferably
+on both the text expected and that received from Appium. There are a number of
+ways to do the normalization, so be sure to perform the same operation on both
+strings!</p>
+<pre><code class="javascript">// javascript
+var unorm = require('unorm');
+driver
+  .elementByAccessibilityId('find')
+    .text()
+    .then(function (txt) {
+      unorm.nfd(txt).should.be(unorm.nfd(&quot;é Œ ù ḍ&quot;));
+    });
+</code></pre>
+
+<p>One tell-tale sign that the problem is with the encoding of the unicode text is
+an assertion that fails but reports what look to be the same string:</p>
+<pre><code class="shell">AssertionError: expected 'François Gérard' to deeply equal 'François Gérard'
+      + expected - actual
+
+      +&quot;François Gérard&quot;
+      -&quot;François Gérard&quot;
+</code></pre>
+
+<p>Since the error is just encoding, the output <em>looks</em> the same. Normalized, these
+should equal programmatically as well as visually.</p>
+<h3 id="finders">Finders</h3>
+<p>Finding by text can also require normalization. For instance, if you have a button
+in an iOS app with the name <code>Найти</code> you may need to normalize the text within the
+find command.</p>
+<pre><code class="javascript">// javascript
+var unorm = require('unorm');
+driver
+  .findElementByXPath(unorm.nfd(&quot;//UIAButton[@name='Найти']&quot;))
+    .should.eventually.exist;
+</code></pre>
+
+<p>Otherwise the elements may not be found.</p>
+<h3 id="text-fields">Text Fields</h3>
+<p>By default the automation tools for both iOS and Android do not support non-ASCII
+characters sent to editable fields through the keyboard.</p>
+<h4 id="ios">iOS</h4>
+<p>Appium sends non-ASCII characters to iOS editable fields directly, bypassing the
+keyboard altogether. While this allows the text to be inputted in tests, it should
+be kept in mind that any business logic triggered by keyboard input will therefore
+not be tested.</p>
+<p>As above, the text received may need to be normalized before asserting on it.</p>
+<pre><code class="javascript">// javascript
+var unorm = require('unorm');
+var testText = unorm.nfd(&quot;é Œ ù ḍ&quot;);
+driver
+  .elementsByClassName('UIATextField').at(1)
+    .sendKeys(testText)
+    .text()
+    .should.become(testText)
+  .nodeify(done);
+</code></pre>
+
+<h4 id="android">Android</h4>
+<p>Android tests allow for Unicode input by installing and using a <a href="https://github.com/appium/io.appium.android.ime">specialized
+keyboard</a> that allows the text
+to be passed as ASCII text between Appium and the application being tested.</p>
+<p>In order to utilize this functionality, set the <code>unicodeKeyboard</code> desired capability
+is set to <code>true</code>. If the keyboard should be returned to its original state, the
+<code>resetKeyboard</code> desired capability should also be set to <code>true</code>. Otherwise Appium's
+Unicode keyboard will remain enabled on the device after the tests are completed.</p>
+<p>Then tests can pass Unicode text to editable fields using <code>send_keys</code>.</p>
+<pre><code class="javascript">// javascript
+var desired = {
+  app: '/path/to/app',
+  deviceName: 'Android Emulator',
+  deviceVersion: '4.4',
+  platformName: 'Android',
+  unicodeKeyboard: true,
+  resetKeyboard: true
+};
+var testText = 'é Œ ù ḍ';
+driver
+  .elementByClassName('android.widget.EditText')
+  .sendKeys(testText)
+  .text()
+  .should.eventually.become(testText)
+  .nodeify(done);
+</code></pre></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

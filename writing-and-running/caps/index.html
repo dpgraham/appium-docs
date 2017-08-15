@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Caps - Appium</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Appium</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About appium <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about-appium/appium-clients/">Appium clients</a>
+</li>
+                            
+<li >
+    <a href="../../about-appium/intro/">Intro</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../advanced/chromedriver/">Chromedriver</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/cross-domain-iframes/">Cross domain iframes</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/event-timings/">Event timings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/grid/">Grid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/hybrid/">Hybrid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-touch-id/">Ios touch id</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-webkit-debug-proxy/">Ios webkit debug proxy</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/iwd_xcode7/">Iwd xcode7</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-1-0/">Migrating to 1 0</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-xcuitest/">Migrating to xcuitest</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/settings/">Settings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/wda-custom-server/">Wda custom server</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../contributing/appium-from-source/">Appium from source</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/appium-packages/">Appium packages</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/credits/">Credits</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/developers-overview/">Developers overview</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/gulp/">Gulp</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/how-to-write-docs/">How to write docs</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide-2.0/">Style guide 2.0</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide/">Style guide</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/version-branch-release/">Version branch release</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../setup/android-hax-emulator/">Android hax emulator</a>
+</li>
+                            
+<li >
+    <a href="../../setup/android-setup/">Android setup</a>
+</li>
+                            
+<li >
+    <a href="../../setup/ios-deploy/">Ios deploy</a>
+</li>
+                            
+<li >
+    <a href="../../setup/parallel_tests/">Parallel tests</a>
+</li>
+                            
+<li >
+    <a href="../../setup/platform-support/">Platform support</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-android/">Real devices android</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-ios/">Real devices ios</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices/">Real devices</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-linux/">Running on linux</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-osx/">Running on osx</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-windows/">Running on windows</a>
+</li>
+                            
+<li >
+    <a href="../../setup/troubleshooting/">Troubleshooting</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Writing and running <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../appium-bindings/">Appium bindings</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Caps</a>
+</li>
+                            
+<li >
+    <a href="../default-capabilities-arg/">Default capabilities arg</a>
+</li>
+                            
+<li >
+    <a href="../espresso/">Espresso</a>
+</li>
+                            
+<li >
+    <a href="../finding-elements/">Finding elements</a>
+</li>
+                            
+<li >
+    <a href="../ios-xctest-mobile-gestures/">Ios xctest mobile gestures</a>
+</li>
+                            
+<li >
+    <a href="../ios_predicate/">Ios predicate</a>
+</li>
+                            
+<li >
+    <a href="../mobile-web/">Mobile web</a>
+</li>
+                            
+<li >
+    <a href="../network_connection/">Network connection</a>
+</li>
+                            
+<li >
+    <a href="../reset-strategies/">Reset strategies</a>
+</li>
+                            
+<li >
+    <a href="../running-tests/">Running tests</a>
+</li>
+                            
+<li >
+    <a href="../safari-launcher/">Safari launcher</a>
+</li>
+                            
+<li >
+    <a href="../server-args/">Server args</a>
+</li>
+                            
+<li >
+    <a href="../touch-actions/">Touch actions</a>
+</li>
+                            
+<li >
+    <a href="../uiautomator2/">Uiautomator2</a>
+</li>
+                            
+<li >
+    <a href="../uiautomator_uiselector/">Uiautomator uiselector</a>
+</li>
+                            
+<li >
+    <a href="../unicode/">Unicode</a>
+</li>
+                            
+<li >
+    <a href="../windows-app-testing/">Windows app testing</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../appium-bindings/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../default-capabilities-arg/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#appium-server-capabilities">Appium server capabilities</a></li>
+            <li><a href="#android-only">Android Only</a></li>
+            <li><a href="#ios-only">iOS Only</a></li>
+            <li><a href="#ios-only-using-xcuitest">iOS Only, using XCUITest</a></li>
+            <li><a href="#youi-engine-only">You.i Engine Only</a></li>
+            <li><a href="#winappdriver-only">WinAppDriver Only</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="appium-server-capabilities">Appium server capabilities</h2>
+<p><expand_table></p>
+<table>
+<thead>
+<tr>
+<th>Capability</th>
+<th>Description</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>automationName</code></td>
+<td>Which automation engine to use</td>
+<td><code>Appium</code> (default) or <code>Selendroid</code></td>
+</tr>
+<tr>
+<td><code>platformName</code></td>
+<td>Which mobile OS platform to use</td>
+<td><code>iOS</code>, <code>Android</code>, or <code>FirefoxOS</code></td>
+</tr>
+<tr>
+<td><code>platformVersion</code></td>
+<td>Mobile OS version</td>
+<td>e.g., <code>7.1</code>, <code>4.4</code></td>
+</tr>
+<tr>
+<td><code>deviceName</code></td>
+<td>The kind of mobile device or emulator to use</td>
+<td><code>iPhone Simulator</code>, <code>iPad Simulator</code>, <code>iPhone Retina 4-inch</code>, <code>Android Emulator</code>, <code>Galaxy S4</code>, etc.... On iOS, this should be one of the valid devices returned by instruments with <code>instruments -s devices</code>. On Android this capability is currently ignored, though it remains required.</td>
+</tr>
+<tr>
+<td><code>app</code></td>
+<td>The absolute local path <em>or</em> remote http URL to an <code>.ipa</code> or <code>.apk</code> file, or a <code>.zip</code> containing one of these. Appium will attempt to install this app binary on the appropriate device first. Note that this capability is not required for Android if you specify <code>appPackage</code> and <code>appActivity</code> capabilities (see below). Incompatible with <code>browserName</code>.</td>
+<td><code>/abs/path/to/my.apk</code> or <code>http://myapp.com/app.ipa</code></td>
+</tr>
+<tr>
+<td><code>browserName</code></td>
+<td>Name of mobile web browser to automate. Should be an empty string if automating an app instead.</td>
+<td>'Safari' for iOS and 'Chrome', 'Chromium', or 'Browser' for Android</td>
+</tr>
+<tr>
+<td><code>newCommandTimeout</code></td>
+<td>How long (in seconds) Appium will wait for a new command from the client before assuming the client quit and ending the session</td>
+<td>e.g. <code>60</code></td>
+</tr>
+<tr>
+<td><code>language</code></td>
+<td>(Sim/Emu-only) Language to set for the simulator / emulator</td>
+<td>e.g. <code>fr</code></td>
+</tr>
+<tr>
+<td><code>locale</code></td>
+<td>(Sim/Emu-only) Locale to set for the simulator / emulator</td>
+<td>e.g. <code>fr_CA</code></td>
+</tr>
+<tr>
+<td><code>udid</code></td>
+<td>Unique device identifier of the connected physical device</td>
+<td>e.g. <code>1ae203187fc012g</code></td>
+</tr>
+<tr>
+<td><code>orientation</code></td>
+<td>(Sim/Emu-only) start in a certain orientation</td>
+<td><code>LANDSCAPE</code> or <code>PORTRAIT</code></td>
+</tr>
+<tr>
+<td><code>autoWebview</code></td>
+<td>Move directly into Webview context. Default <code>false</code></td>
+<td><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td><code>noReset</code></td>
+<td>Don't reset app state before this session. See <a href="/docs/en/writing-running-appium/reset-strategies.md">here</a> for more details</td>
+<td><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td><code>fullReset</code></td>
+<td>Perform a complete reset. See <a href="/docs/en/writing-running-appium/reset-strategies.md">here</a> for more details</td>
+<td><code>true</code>, <code>false</code></td>
+</tr>
+<tr>
+<td><code>eventTimings</code></td>
+<td>Enable or disable the reporting of the timings for various Appium-internal events (e.g., the start and end of each command, etc.). Defaults to <code>false</code>. To enable, use <code>true</code>. The timings are then reported as <code>events</code> property on response to querying the current session. See the <a href="/docs/en/advanced-concepts/event-timings.md">event timing docs</a> for the the structure of this response.</td>
+<td>e.g., <code>true</code></td>
+</tr>
+<tr>
+<td><code>enablePerformanceLogging</code></td>
+<td>(Web and webview only) Enable Chromedriver's (on Android) or Safari's (on iOS) performance logging (default <code>false</code>)</td>
+<td><code>true</code>, <code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="android-only">Android Only</h3>
+<p><expand_table></p>
+<table>
+<thead>
+<tr>
+<th>Capability</th>
+<th>Description</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>appActivity</code></td>
+<td>Activity name for the Android activity you want to launch from your package. This often needs to be preceded by a <code>.</code> (e.g., <code>.MainActivity</code> instead of <code>MainActivity</code>)</td>
+<td><code>MainActivity</code>, <code>.Settings</code></td>
+</tr>
+<tr>
+<td><code>appPackage</code></td>
+<td>Java package of the Android app you want to run</td>
+<td><code>com.example.android.myApp</code>, <code>com.android.settings</code></td>
+</tr>
+<tr>
+<td><code>appWaitActivity</code></td>
+<td>Activity name/names, comma separated, for the Android activity you want to wait for</td>
+<td><code>SplashActivity</code>, <code>SplashActivity,OtherActivity</code>, <code>*</code>, <code>*.SplashActivity</code></td>
+</tr>
+<tr>
+<td><code>appWaitPackage</code></td>
+<td>Java package of the Android app you want to wait for</td>
+<td><code>com.example.android.myApp</code>, <code>com.android.settings</code></td>
+</tr>
+<tr>
+<td><code>appWaitDuration</code></td>
+<td>Timeout in milliseconds used to wait for the appWaitActivity to launch (default <code>20000</code>)</td>
+<td><code>30000</code></td>
+</tr>
+<tr>
+<td><code>deviceReadyTimeout</code></td>
+<td>Timeout in seconds while waiting for device to become ready</td>
+<td><code>5</code></td>
+</tr>
+<tr>
+<td><code>androidCoverage</code></td>
+<td>Fully qualified instrumentation class. Passed to -w in adb shell am instrument -e coverage true -w</td>
+<td><code>com.my.Pkg/com.my.Pkg.instrumentation.MyInstrumentation</code></td>
+</tr>
+<tr>
+<td><code>androidDeviceReadyTimeout</code></td>
+<td>Timeout in seconds used to wait for a device to become ready after booting</td>
+<td>e.g., <code>30</code></td>
+</tr>
+<tr>
+<td><code>androidInstallTimeout</code></td>
+<td>Timeout in milliseconds used to wait for an apk to install to the device. Defaults to <code>90000</code></td>
+<td>e.g., <code>90000</code></td>
+</tr>
+<tr>
+<td><code>androidInstallPath</code></td>
+<td>The name of the directory on the device in which the apk will be push before install. Defaults to <code>/data/local/tmp</code></td>
+<td>e.g. <code>/sdcard/Downloads/</code></td>
+</tr>
+<tr>
+<td><code>adbPort</code></td>
+<td>Port used to connect to the ADB server (default <code>5037</code>)</td>
+<td><code>5037</code></td>
+</tr>
+<tr>
+<td><code>remoteAdbHost</code></td>
+<td>Optional remote ADB server host</td>
+<td>e.g.: 192.168.0.101</td>
+</tr>
+<tr>
+<td><code>androidDeviceSocket</code></td>
+<td>Devtools socket name. Needed only when tested app is a Chromium embedding browser. The socket is open by the browser and Chromedriver connects to it as a devtools client.</td>
+<td>e.g., <code>chrome_devtools_remote</code></td>
+</tr>
+<tr>
+<td><code>avd</code></td>
+<td>Name of avd to launch</td>
+<td>e.g., <code>api19</code></td>
+</tr>
+<tr>
+<td><code>avdLaunchTimeout</code></td>
+<td>How long to wait in milliseconds for an avd to launch and connect to ADB (default <code>120000</code>)</td>
+<td><code>300000</code></td>
+</tr>
+<tr>
+<td><code>avdReadyTimeout</code></td>
+<td>How long to wait in milliseconds for an avd to finish its boot animations (default <code>120000</code>)</td>
+<td><code>300000</code></td>
+</tr>
+<tr>
+<td><code>avdArgs</code></td>
+<td>Additional emulator arguments used when launching an avd</td>
+<td>e.g., <code>-netfast</code></td>
+</tr>
+<tr>
+<td><code>useKeystore</code></td>
+<td>Use a custom keystore to sign apks, default <code>false</code></td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>keystorePath</code></td>
+<td>Path to custom keystore, default ~/.android/debug.keystore</td>
+<td>e.g., <code>/path/to.keystore</code></td>
+</tr>
+<tr>
+<td><code>keystorePassword</code></td>
+<td>Password for custom keystore</td>
+<td>e.g., <code>foo</code></td>
+</tr>
+<tr>
+<td><code>keyAlias</code></td>
+<td>Alias for key</td>
+<td>e.g., <code>androiddebugkey</code></td>
+</tr>
+<tr>
+<td><code>keyPassword</code></td>
+<td>Password for key</td>
+<td>e.g., <code>foo</code></td>
+</tr>
+<tr>
+<td><code>chromedriverExecutable</code></td>
+<td>The absolute local path to webdriver executable (if Chromium embedder provides its own webdriver, it should be used instead of original chromedriver bundled with Appium)</td>
+<td><code>/abs/path/to/webdriver</code></td>
+</tr>
+<tr>
+<td><code>autoWebviewTimeout</code></td>
+<td>Amount of time to wait for Webview context to become active, in ms. Defaults to <code>2000</code></td>
+<td>e.g. <code>4</code></td>
+</tr>
+<tr>
+<td><code>intentAction</code></td>
+<td>Intent action which will be used to start activity (default <code>android.intent.action.MAIN</code>)</td>
+<td>e.g.<code>android.intent.action.MAIN</code>, <code>android.intent.action.VIEW</code></td>
+</tr>
+<tr>
+<td><code>intentCategory</code></td>
+<td>Intent category which will be used to start activity (default <code>android.intent.category.LAUNCHER</code>)</td>
+<td>e.g. <code>android.intent.category.LAUNCHER</code>, <code>android.intent.category.APP_CONTACTS</code></td>
+</tr>
+<tr>
+<td><code>intentFlags</code></td>
+<td>Flags that will be used to start activity (default <code>0x10200000</code>)</td>
+<td>e.g. <code>0x10200000</code></td>
+</tr>
+<tr>
+<td><code>optionalIntentArguments</code></td>
+<td>Additional intent arguments that will be used to start activity. See <a href="http://developer.android.com/reference/android/content/Intent.html">Intent arguments</a></td>
+<td>e.g. <code>--esn &lt;EXTRA_KEY&gt;</code>, <code>--ez &lt;EXTRA_KEY&gt; &lt;EXTRA_BOOLEAN_VALUE&gt;</code>, etc.</td>
+</tr>
+<tr>
+<td><code>dontStopAppOnReset</code></td>
+<td>Doesn't stop the process of the app under test, before starting the app using adb. If the app under test is created by another anchor app, setting this false, allows the process of the anchor app to be still alive, during the start of the test app using adb. In other words, with <code>dontStopAppOnReset</code> set to <code>true</code>, we will not include the <code>-S</code> flag in the <code>adb shell am start</code> call. With this capability omitted or set to <code>false</code>, we include the <code>-S</code> flag. Default <code>false</code></td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>unicodeKeyboard</code></td>
+<td>Enable Unicode input, default <code>false</code></td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>resetKeyboard</code></td>
+<td>Reset keyboard to its original state, after running Unicode tests with <code>unicodeKeyboard</code> capability. Ignored if used alone. Default <code>false</code></td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>noSign</code></td>
+<td>Skip checking and signing of app with debug keys, will work only with UiAutomator and not with selendroid, default <code>false</code></td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>ignoreUnimportantViews</code></td>
+<td>Calls the <code>setCompressedLayoutHierarchy()</code> uiautomator function. This capability can speed up test execution, since Accessibility commands will run faster ignoring some elements. The ignored elements will not be findable, which is why this capability has also been implemented as a toggle-able <em>setting</em> as well as a capability. Defaults to <code>false</code></td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>disableAndroidWatchers</code></td>
+<td>Disables android watchers that watch for application not responding and application crash, this will reduce cpu usage on android device/emulator. This capability will work only with UiAutomator and not with selendroid, default <code>false</code></td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>chromeOptions</code></td>
+<td>Allows passing chromeOptions capability for ChromeDriver. For more information see <a href="https://sites.google.com/a/chromium.org/chromedriver/capabilities">chromeOptions</a></td>
+<td><code>chromeOptions: {args: ['--disable-popup-blocking']}</code></td>
+</tr>
+<tr>
+<td><code>recreateChromeDriverSessions</code></td>
+<td>Kill ChromeDriver session when moving to a non-ChromeDriver webview. Defaults to <code>false</code></td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>nativeWebScreenshot</code></td>
+<td>In a web context, use native (adb) method for taking a screenshot, rather than proxying to ChromeDriver. Defaults to <code>false</code></td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>androidScreenshotPath</code></td>
+<td>The name of the directory on the device in which the screenshot will be put. Defaults to <code>/data/local/tmp</code></td>
+<td>e.g. <code>/sdcard/screenshots/</code></td>
+</tr>
+<tr>
+<td><code>autoGrantPermissions</code></td>
+<td>Have Appium automatically determine which permissions your app requires and grant them to the app on install. Defaults to <code>false</code></td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ios-only">iOS Only</h3>
+<p><expand_table></p>
+<table>
+<thead>
+<tr>
+<th>Capability</th>
+<th>Description</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>calendarFormat</code></td>
+<td>(Sim-only) Calendar format to set for the iOS Simulator</td>
+<td>e.g. <code>gregorian</code></td>
+</tr>
+<tr>
+<td><code>bundleId</code></td>
+<td>Bundle ID of the app under test. Useful for starting an app on a real device or for using other caps which require the bundle ID during test startup. To run a test on a real device using the bundle ID, you may omit the 'app' capability, but you must provide 'udid'.</td>
+<td>e.g. <code>io.appium.TestApp</code></td>
+</tr>
+<tr>
+<td><code>udid</code></td>
+<td>Unique device identifier of the connected physical device</td>
+<td>e.g. <code>1ae203187fc012g</code></td>
+</tr>
+<tr>
+<td><code>launchTimeout</code></td>
+<td>Amount of time in ms to wait for instruments before assuming it hung and failing the session</td>
+<td>e.g. <code>20000</code></td>
+</tr>
+<tr>
+<td><code>locationServicesEnabled</code></td>
+<td>(Sim-only) Force location services to be either on or off. Default is to keep current sim setting.</td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>locationServicesAuthorized</code></td>
+<td>(Sim-only) Set location services to be authorized or not authorized for app via plist, so that location services alert doesn't pop up. Default is to keep current sim setting. Note that if you use this setting you MUST also use the <code>bundleId</code> capability to send in your app's bundle ID.</td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>autoAcceptAlerts</code></td>
+<td>Accept all iOS alerts automatically if they pop up. This includes privacy access permission alerts (e.g., location, contacts, photos). Default is false. Does not work on <code>XCUITest</code>-based tests.</td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>autoDismissAlerts</code></td>
+<td>Dismiss all iOS alerts automatically if they pop up. This includes privacy access permission alerts (e.g., location, contacts, photos). Default is false. Does not work on <code>XCUITest</code>-based tests.</td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>nativeInstrumentsLib</code></td>
+<td>Use native intruments lib (ie disable instruments-without-delay).</td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>nativeWebTap</code></td>
+<td>(Sim-only) Enable "real", non-javascript-based web taps in Safari. Default: <code>false</code>. Warning: depending on viewport size/ratio this might not accurately tap an element</td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>safariInitialUrl</code></td>
+<td>(Sim-only) (&gt;= 8.1) Initial safari url, default is a local welcome page</td>
+<td>e.g. <code>https://www.github.com</code></td>
+</tr>
+<tr>
+<td><code>safariAllowPopups</code></td>
+<td>(Sim-only) Allow javascript to open new windows in Safari. Default keeps current sim setting</td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>safariIgnoreFraudWarning</code></td>
+<td>(Sim-only) Prevent Safari from showing a fraudulent website warning. Default keeps current sim setting.</td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>safariOpenLinksInBackground</code></td>
+<td>(Sim-only) Whether Safari should allow links to open in new windows. Default keeps current sim setting.</td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>keepKeyChains</code></td>
+<td>(Sim-only) Whether to keep keychains (Library/Keychains) when appium session is started/finished</td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>localizableStringsDir</code></td>
+<td>Where to look for localizable strings. Default <code>en.lproj</code></td>
+<td><code>en.lproj</code></td>
+</tr>
+<tr>
+<td><code>processArguments</code></td>
+<td>Arguments to pass to the AUT using instruments</td>
+<td>e.g., <code>-myflag</code></td>
+</tr>
+<tr>
+<td><code>interKeyDelay</code></td>
+<td>The delay, in ms, between keystrokes sent to an element when typing.</td>
+<td>e.g., <code>100</code></td>
+</tr>
+<tr>
+<td><code>showIOSLog</code></td>
+<td>Whether to show any logs captured from a device in the appium logs. Default <code>false</code></td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>sendKeyStrategy</code></td>
+<td>strategy to use to type test into a test field. Simulator default: <code>oneByOne</code>. Real device default: <code>grouped</code></td>
+<td><code>oneByOne</code>, <code>grouped</code> or <code>setValue</code></td>
+</tr>
+<tr>
+<td><code>screenshotWaitTimeout</code></td>
+<td>Max timeout in sec to wait for a screenshot to be generated. default: 10</td>
+<td>e.g., <code>5</code></td>
+</tr>
+<tr>
+<td><code>waitForAppScript</code></td>
+<td>The ios automation script used to determined if the app has been launched, by default the system wait for the page source not to be empty. The result must be a boolean</td>
+<td>e.g. <code>true;</code>, <code>target.elements().length &gt; 0;</code>, <code>$.delay(5000); true;</code></td>
+</tr>
+<tr>
+<td><code>webviewConnectRetries</code></td>
+<td>Number of times to send connection message to remote debugger, to get webview. Default: <code>8</code></td>
+<td>e.g., <code>12</code></td>
+</tr>
+<tr>
+<td><code>appName</code></td>
+<td>The display name of the application under test. Used to automate backgrounding the app in iOS 9+.</td>
+<td>e.g., <code>UICatalog</code></td>
+</tr>
+<tr>
+<td><code>customSSLCert</code></td>
+<td>(Sim/Emu-only) Add an SSL certificate to simulator.</td>
+<td>e.g. <br/><code>-----BEGIN CERTIFICATE-----MIIFWjCCBEKg...</code><br/><code>-----END CERTIFICATE-----</code></td>
+</tr>
+<tr>
+<td><code>webkitResponseTimeout</code></td>
+<td>(Real device only) Set the time, in ms, to wait for a response from WebKit in a Safari session. Defaults to <code>5000</code></td>
+<td>e.g., <code>10000</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ios-only-using-xcuitest">iOS Only, using XCUITest</h3>
+<p>(For XCUITest-specific capabilities, please refer to the documentation on the <a href="https://github.com/appium/appium-xcuitest-driver#desired-capabilities">XCUITest driver</a> itself.)</p>
+<h3 id="youi-engine-only">You.i Engine Only</h3>
+<p><expand_table></p>
+<p>(For You.i Engine-specific capabilities, please refer to the documentation on the <a href="https://github.com/YOU-i-Labs/appium-youiengine-driver#desired-capabilities">You.i Engine driver</a> itself.)</p>
+<h3 id="winappdriver-only">WinAppDriver Only</h3>
+<p><expand_table></p>
+<table>
+<thead>
+<tr>
+<th>Capability</th>
+<th>Description</th>
+<th>Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>platformName</code></td>
+<td>Which platform the test is being done on</td>
+<td>e.g. <code>Windows</code></td>
+</tr>
+<tr>
+<td><code>deviceName</code></td>
+<td>The name of the device being tested on</td>
+<td>e.g. <code>WindowsPC</code></td>
+</tr>
+<tr>
+<td><code>app</code></td>
+<td>appID of the windows app for testing or the path to the .exe file. See <a href="/docs/en/writing-running-appium/windows-app-testing.md">this page</a> for details on how to find the appID</td>
+<td>e.g. <code>c24c8163-548e-4b84-a466-530178fc0580_scyf5npe3hv32!App</code></td>
+</tr>
+</tbody>
+</table></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

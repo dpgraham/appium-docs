@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Mobile web - Appium</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Appium</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About appium <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about-appium/appium-clients/">Appium clients</a>
+</li>
+                            
+<li >
+    <a href="../../about-appium/intro/">Intro</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../advanced/chromedriver/">Chromedriver</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/cross-domain-iframes/">Cross domain iframes</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/event-timings/">Event timings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/grid/">Grid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/hybrid/">Hybrid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-touch-id/">Ios touch id</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-webkit-debug-proxy/">Ios webkit debug proxy</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/iwd_xcode7/">Iwd xcode7</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-1-0/">Migrating to 1 0</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-xcuitest/">Migrating to xcuitest</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/settings/">Settings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/wda-custom-server/">Wda custom server</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../contributing/appium-from-source/">Appium from source</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/appium-packages/">Appium packages</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/credits/">Credits</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/developers-overview/">Developers overview</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/gulp/">Gulp</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/how-to-write-docs/">How to write docs</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide-2.0/">Style guide 2.0</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide/">Style guide</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/version-branch-release/">Version branch release</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../setup/android-hax-emulator/">Android hax emulator</a>
+</li>
+                            
+<li >
+    <a href="../../setup/android-setup/">Android setup</a>
+</li>
+                            
+<li >
+    <a href="../../setup/ios-deploy/">Ios deploy</a>
+</li>
+                            
+<li >
+    <a href="../../setup/parallel_tests/">Parallel tests</a>
+</li>
+                            
+<li >
+    <a href="../../setup/platform-support/">Platform support</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-android/">Real devices android</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-ios/">Real devices ios</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices/">Real devices</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-linux/">Running on linux</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-osx/">Running on osx</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-windows/">Running on windows</a>
+</li>
+                            
+<li >
+    <a href="../../setup/troubleshooting/">Troubleshooting</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Writing and running <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../appium-bindings/">Appium bindings</a>
+</li>
+                            
+<li >
+    <a href="../caps/">Caps</a>
+</li>
+                            
+<li >
+    <a href="../default-capabilities-arg/">Default capabilities arg</a>
+</li>
+                            
+<li >
+    <a href="../espresso/">Espresso</a>
+</li>
+                            
+<li >
+    <a href="../finding-elements/">Finding elements</a>
+</li>
+                            
+<li >
+    <a href="../ios-xctest-mobile-gestures/">Ios xctest mobile gestures</a>
+</li>
+                            
+<li >
+    <a href="../ios_predicate/">Ios predicate</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Mobile web</a>
+</li>
+                            
+<li >
+    <a href="../network_connection/">Network connection</a>
+</li>
+                            
+<li >
+    <a href="../reset-strategies/">Reset strategies</a>
+</li>
+                            
+<li >
+    <a href="../running-tests/">Running tests</a>
+</li>
+                            
+<li >
+    <a href="../safari-launcher/">Safari launcher</a>
+</li>
+                            
+<li >
+    <a href="../server-args/">Server args</a>
+</li>
+                            
+<li >
+    <a href="../touch-actions/">Touch actions</a>
+</li>
+                            
+<li >
+    <a href="../uiautomator2/">Uiautomator2</a>
+</li>
+                            
+<li >
+    <a href="../uiautomator_uiselector/">Uiautomator uiselector</a>
+</li>
+                            
+<li >
+    <a href="../unicode/">Unicode</a>
+</li>
+                            
+<li >
+    <a href="../windows-app-testing/">Windows app testing</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../ios_predicate/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../network_connection/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#automating-mobile-web-apps">Automating mobile web apps</a></li>
+            <li><a href="#mobile-safari-on-simulator">Mobile Safari on Simulator</a></li>
+            <li><a href="#mobile-safari-on-a-real-ios-device">Mobile Safari on a Real iOS Device</a></li>
+            <li><a href="#setup">Setup</a></li>
+            <li><a href="#running-your-test">Running your test</a></li>
+            <li><a href="#java-example">Java Example</a></li>
+            <li><a href="#python-example">Python Example</a></li>
+            <li><a href="#mobile-chrome-on-emulator-or-real-device">Mobile Chrome on Emulator or Real Device</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="automating-mobile-web-apps">Automating mobile web apps</h2>
+<p>If you're interested in automating your web app in Mobile Safari on iOS or
+Chrome on Android, Appium can help you. Basically, you write a normal WebDriver
+test, and use Appium as the Selenium server with a special set of desired
+capabilities.</p>
+<h3 id="mobile-safari-on-simulator">Mobile Safari on Simulator</h3>
+<p>First of all, make sure developer mode is turned on in your Safari
+preferences so that the remote debugger port is open.</p>
+<p>If you are using the simulator or a real device, you MUST run Safari before
+attempting to use Appium.</p>
+<p>Then, use desired capabilities like these to run your test in mobile Safari:</p>
+<pre><code class="javascript">// javascript
+{
+  platformName: 'iOS'
+  , platformVersion: '7.1'
+  , browserName: 'Safari'
+  , deviceName: 'iPhone Simulator'
+}
+</code></pre>
+
+<pre><code class="python"># python
+{
+  'platformName': 'iOS',
+  'platformVersion': '7.1',
+  'browserName': 'Safari',
+  'deviceName': 'iPhone Simulator'
+}
+</code></pre>
+
+<pre><code class="php">// php
+public static $browsers = array(
+    array(
+        'desiredCapabilities' =&gt; array(
+            'platformName' =&gt; 'iOS',
+            'platformVersion' =&gt; '7.1',
+            'browserName' =&gt; 'Safari',
+            'deviceName' =&gt; 'iPhone Simulator'
+        )
+    )
+);
+</code></pre>
+
+<pre><code class="java">// java
+DesiredCapabilities capabilities = new DesiredCapabilities();
+capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, &quot;iOS&quot;);
+capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, &quot;7.1&quot;);
+capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, &quot;Safari&quot;);
+capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, &quot;iPhone Simulator&quot;);
+</code></pre>
+
+<h3 id="mobile-safari-on-a-real-ios-device">Mobile Safari on a Real iOS Device</h3>
+<p>For iOS 9.3 and below (pre-XCUITest), we use the <a href="https://github.com/snevesbarros/SafariLauncher">SafariLauncher
+App</a> app to launch Safari and
+run tests against mobile Safari. This is because Safari is an app that is owned
+by Apple, and Instruments cannot launch it on real devices. Once Safari has
+been launched by SafariLauncher, the Remote Debugger automatically connects
+using the
+<a href="https://github.com/google/ios-webkit-debug-proxy">ios-webkit-debug-proxy</a>.
+When working with <code>ios-webkit-debug-proxy</code>, you have to trust the machine before
+you can can run tests against your iOS device.</p>
+<p>For instruction on how to install and run ios-webkit-debugger-proxy see
+<a href="/docs/en/advanced-concepts/ios-webkit-debug-proxy.md">iOS WebKit debug proxy</a> documentation.</p>
+<h3 id="setup">Setup</h3>
+<p>Before you can run your tests against Safari on a real device you will need to:</p>
+<ul>
+<li>Have the <strong>ios-webkit-debug-proxy</strong> installed, running and listening on port 27753 (see the
+<a href="/docs/en/advanced-concepts/hybrid.md#execution-against-a-real-ios-device">hybrid docs</a> for instructions)</li>
+<li>Turn on <strong>web inspector</strong> on iOS device (<strong>settings &gt; safari &gt; advanced</strong>)</li>
+<li>Make sure that <code>SafariLauncher</code> will work (see the <a href="../safari-launcher/">SafariLauncher docs</a> for instructions)</li>
+</ul>
+<h3 id="running-your-test">Running your test</h3>
+<p>To configure you test to run against safari simply set the <strong>"browserName"</strong> to be <strong>"Safari"</strong>.</p>
+<h3 id="java-example">Java Example</h3>
+<pre><code class="java">// java
+//setup the web driver and launch the webview app.
+DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+desiredCapabilities.setCapability(MobileCapabilityType.BROWSER_NAME, &quot;Safari&quot;);
+URL url = new URL(&quot;http://127.0.0.1:4723/wd/hub&quot;);
+AppiumDriver driver = new AppiumDriver(url, desiredCapabilities);
+
+// Navigate to the page and interact with the elements on the guinea-pig page using id.
+driver.get(&quot;http://saucelabs.com/test/guinea-pig&quot;);
+WebElement div = driver.findElement(By.id(&quot;i_am_an_id&quot;));
+Assert.assertEquals(&quot;I am a div&quot;, div.getText()); //check the text retrieved matches expected value
+driver.findElement(By.id(&quot;comments&quot;)).sendKeys(&quot;My comment&quot;); //populate the comments field by id.
+
+//close the app.
+driver.quit();
+</code></pre>
+
+<h3 id="python-example">Python Example</h3>
+<pre><code class="python"># python
+# setup the web driver and launch the webview app.
+capabilities = { 'browserName': 'Safari' }
+driver = webdriver.Remote('http://localhost:4723/wd/hub', capabilities)
+
+# Navigate to the page and interact with the elements on the guinea-pig page using id.
+driver.get('http://saucelabs.com/test/guinea-pig');
+div = driver.find_element_by_id('i_am_an_id')
+# check the text retrieved matches expected value
+assertEqual('I am a div', div.text)
+
+# populate the comments field by id
+driver.find_element_by_id('comments').send_keys('My comment')
+
+# close the driver
+driver.quit()
+</code></pre>
+
+<pre><code class="php">// php
+class ContextTests extends PHPUnit_Extensions_AppiumTestCase
+{
+    public static $browsers = array(
+        array(
+            'desiredCapabilities' =&gt; array(
+                'platformName' =&gt; 'iOS',
+                'platformVersion' =&gt; '7.1',
+                'browserName' =&gt; 'Safari',
+                'deviceName' =&gt; 'iPhone Simulator'
+            )
+        )
+    );
+
+    public function testThings()
+    {
+        $this-&gt;get('http://saucelabs.com/test/guinea-pig');
+
+        $div = $this-&gt;byId('i_am_an_id');
+        $this-&gt;assertEquals('I am a div', $div-&gt;text());
+
+        $this-&gt;byId('comments')-&gt;sendKeys('My comment');
+    }
+}
+</code></pre>
+
+<h3 id="mobile-chrome-on-emulator-or-real-device">Mobile Chrome on Emulator or Real Device</h3>
+<p>Pre-requisites:</p>
+<ul>
+<li>Make sure Chrome (an app with the package <code>com.android.chrome</code>) is installed on your device or emulator. Getting Chrome for the x86 version of the emulator is not currently possible without building Chromium, so you may want to run an ARM emulator and then copy a Chrome APK from a real device to get Chrome on an emulator.</li>
+<li>Chromedriver needs to be installed and configured for automating the specific version of Chrome available on the device. See <a href="/docs/en/advanced-concepts/chromedriver.md">here</a> for more information and details.</li>
+</ul>
+<p>Then, use desired capabilities like these to run your test in Chrome:</p>
+<pre><code class="javascript">// javascript
+{
+  platformName: 'Android'
+  , platformVersion: '4.4'
+  , deviceName: 'Android Emulator'
+  , browserName: 'Chrome'
+};
+</code></pre>
+
+<pre><code class="python"># python
+{
+  'platformName': 'Android',
+  'platformVersion': '4.4',
+  'deviceName': 'Android Emulator',
+  'browserName': 'Chrome'
+}
+</code></pre>
+
+<pre><code class="php">// php
+public static $browsers = array(
+    array(
+        'desiredCapabilities' =&gt; array(
+            'platformName' =&gt; 'Android',
+            'platformVersion' =&gt; '4.4',
+            'browserName' =&gt; 'Chrome',
+            'deviceName' =&gt; 'Android Emulator'
+        )
+    )
+);
+</code></pre>
+
+<pre><code class="java">// java
+DesiredCapabilities capabilities = new DesiredCapabilities();
+capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, &quot;Android&quot;);
+capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, &quot;4.4&quot;);
+capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, &quot;Android Emulator&quot;);
+capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, &quot;Chrome&quot;);
+</code></pre>
+
+<p>Note that on 4.4+ devices, you can also use the 'Browser' <code>browserName</code> cap to automate the built-in browser. On all devices you can use the 'Chromium' <code>browserName</code> cap to automate a build of Chromium.</p>
+<h4 id="troubleshooting-chromedriver">Troubleshooting chromedriver</h4>
+<p>As of Chrome version 33, a rooted device is no longer required. If running tests on older versions of Chrome, devices needed to be rooted as ChromeDriver required write access to the /data/local directory
+to set Chrome's command line arguments.</p>
+<p>If testing on Chrome app prior to version 33, ensure adb shell has read/write access to /data/local directory on the device:</p>
+<pre><code class="center">$ adb shell su -c chmod 777 /data/local
+</code></pre>
+
+<p>For more chromedriver specific documentation see <a href="https://sites.google.com/a/chromium.org/chromedriver/getting-started/getting-started---android">ChromeDriver documentation</a>.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

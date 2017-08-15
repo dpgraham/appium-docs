@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Migrating to 1 0 - Appium</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Appium</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About appium <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about-appium/appium-clients/">Appium clients</a>
+</li>
+                            
+<li >
+    <a href="../../about-appium/intro/">Intro</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../chromedriver/">Chromedriver</a>
+</li>
+                            
+<li >
+    <a href="../cross-domain-iframes/">Cross domain iframes</a>
+</li>
+                            
+<li >
+    <a href="../event-timings/">Event timings</a>
+</li>
+                            
+<li >
+    <a href="../grid/">Grid</a>
+</li>
+                            
+<li >
+    <a href="../hybrid/">Hybrid</a>
+</li>
+                            
+<li >
+    <a href="../ios-touch-id/">Ios touch id</a>
+</li>
+                            
+<li >
+    <a href="../ios-webkit-debug-proxy/">Ios webkit debug proxy</a>
+</li>
+                            
+<li >
+    <a href="../iwd_xcode7/">Iwd xcode7</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Migrating to 1 0</a>
+</li>
+                            
+<li >
+    <a href="../migrating-to-xcuitest/">Migrating to xcuitest</a>
+</li>
+                            
+<li >
+    <a href="../settings/">Settings</a>
+</li>
+                            
+<li >
+    <a href="../wda-custom-server/">Wda custom server</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../contributing/appium-from-source/">Appium from source</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/appium-packages/">Appium packages</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/credits/">Credits</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/developers-overview/">Developers overview</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/gulp/">Gulp</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/how-to-write-docs/">How to write docs</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide-2.0/">Style guide 2.0</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide/">Style guide</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/version-branch-release/">Version branch release</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../setup/android-hax-emulator/">Android hax emulator</a>
+</li>
+                            
+<li >
+    <a href="../../setup/android-setup/">Android setup</a>
+</li>
+                            
+<li >
+    <a href="../../setup/ios-deploy/">Ios deploy</a>
+</li>
+                            
+<li >
+    <a href="../../setup/parallel_tests/">Parallel tests</a>
+</li>
+                            
+<li >
+    <a href="../../setup/platform-support/">Platform support</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-android/">Real devices android</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-ios/">Real devices ios</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices/">Real devices</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-linux/">Running on linux</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-osx/">Running on osx</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-windows/">Running on windows</a>
+</li>
+                            
+<li >
+    <a href="../../setup/troubleshooting/">Troubleshooting</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Writing and running <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../writing-and-running/appium-bindings/">Appium bindings</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/caps/">Caps</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/default-capabilities-arg/">Default capabilities arg</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/espresso/">Espresso</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/finding-elements/">Finding elements</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/ios-xctest-mobile-gestures/">Ios xctest mobile gestures</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/ios_predicate/">Ios predicate</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/mobile-web/">Mobile web</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/network_connection/">Network connection</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/reset-strategies/">Reset strategies</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/running-tests/">Running tests</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/safari-launcher/">Safari launcher</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/server-args/">Server args</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/touch-actions/">Touch actions</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/uiautomator2/">Uiautomator2</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/uiautomator_uiselector/">Uiautomator uiselector</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/unicode/">Unicode</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/windows-app-testing/">Windows app testing</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../iwd_xcode7/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../migrating-to-xcuitest/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#migrating-your-tests-from-appium-018x-to-appium-1x">Migrating your tests from Appium 0.18.x to Appium 1.x</a></li>
+            <li><a href="#new-client-libraries">New client libraries</a></li>
+            <li><a href="#new-desired-capabilities">New desired capabilities</a></li>
+            <li><a href="#new-locator-strategies">New locator strategies</a></li>
+            <li><a href="#xml-not-json">XML, not JSON</a></li>
+            <li><a href="#hybrid-support-through-context-not-window">Hybrid support through context, not window</a></li>
+            <li><a href="#no-more-execute_scriptmobile-xxx">No more execute_script("mobile: xxx")</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p><em>This document is old, and only of interest for those migrating to Appium 1.x from an earlier version</em></p>
+<h2 id="migrating-your-tests-from-appium-018x-to-appium-1x">Migrating your tests from Appium 0.18.x to Appium 1.x</h2>
+<p>Appium 1.0 has removed a number of deprecated features from the previous versions. This guide will help you know what needs to change in your test suite to take advantage of Appium 1.0.</p>
+<h3 id="new-client-libraries">New client libraries</h3>
+<p>The biggest thing you need to worry about is using the new Appium client libraries instead of the vanilla WebDriver clients you are currently using. Visit the <a href="/docs/en/about-appium/appium-clients.md">Appium client list</a> to find the client for your language. Downloads and instructions for integrating into your code are available on the individual client websites.</p>
+<p>Ultimately, you'll be doing something like (to use Python as an example):</p>
+<pre><code class="center">from appium import webdriver
+</code></pre>
+
+<p>Instead of:</p>
+<pre><code class="center">from selenium import webdriver
+</code></pre>
+
+<h3 id="new-desired-capabilities">New desired capabilities</h3>
+<p>The following capabilities are no longer used:</p>
+<ul>
+<li><code>device</code></li>
+<li><code>version</code></li>
+</ul>
+<p>Instead, use these capabilities:</p>
+<ul>
+<li><code>platformName</code> (either "iOS" or "Android")</li>
+<li><code>platformVersion</code> (the mobile OS version you want)</li>
+<li><code>deviceName</code> (the kind of device you want, like "iPhone Simulator")</li>
+<li><code>automationName</code> ("Selendroid" if you want to use Selendroid, otherwise, this can be omitted)</li>
+</ul>
+<p>The <code>app</code> capability remains the same, but now refers exclusively to non-browser apps. To use browsers like Safari or Chrome, use the standard <code>browserName</code> cap. This means that <code>app</code> and <code>browserName</code> are exclusive.</p>
+<p>We have also standardized on camelCase for Appium server caps. That means caps like <code>app-package</code> or <code>app-wait-activity</code> are now <code>appPackage</code> and <code>appWaitActivity</code> respectively. Of course, since Android app package and activity are now auto-detected, you should be able to omit them entirely in most cases.</p>
+<h3 id="new-locator-strategies">New locator strategies</h3>
+<p>We've removed the following locator strategies:</p>
+<ul>
+<li><code>name</code></li>
+<li><code>tag name</code></li>
+</ul>
+<p>We have now added the <code>accessibility_id</code> strategy to do what <code>name</code> used to do. The specifics will be relative to your Appium client.</p>
+<p><code>tag name</code> has been replaced by <code>class name</code>. So to find an element by its UI type, use the class name locator strategy for your client.</p>
+<p>Note about <code>class name</code> and <code>xpath</code> strategies: these now require the fully-qualified class name for your element. This means that if you had an xpath selector that looked like this:</p>
+<pre><code class="center">//table/cell/button
+</code></pre>
+
+<p>It would now need to be:</p>
+<pre><code class="center">//UIATableView/UIATableCell/UIAButton
+</code></pre>
+
+<p>(And likewise for Android: <code>button</code> now needs to be <code>android.widget.Button</code>)</p>
+<p>We've also added the following locator strategies:</p>
+<ul>
+<li><code>-ios uiautomation</code></li>
+<li><code>-android uiautomator</code></li>
+</ul>
+<p>Refer to your client for ways to use these new locator strategies.</p>
+<h3 id="xml-not-json">XML, not JSON</h3>
+<p>App source methods, which previously returned JSON, now return XML, so if you have code that relies on parsing the app source, it will need to be updated.</p>
+<h3 id="hybrid-support-through-context-not-window">Hybrid support through context, not window</h3>
+<p>Hybrid apps were previously supported by switching between "windows" using</p>
+<ul>
+<li><code>window_handles</code></li>
+<li><code>window</code></li>
+<li><code>switch_to.window</code></li>
+</ul>
+<p>Now Appium supports the more conceptually consistent concept of "context". To get all of the available contexts, or the particular context the application is is, you use</p>
+<pre><code class="python"># python
+driver.contexts
+current = driver.context
+</code></pre>
+
+<pre><code class="javascript">// javascript
+driver.contexts().then(function (contexts) { /*...*/ })
+</code></pre>
+
+<pre><code class="c#">// c#
+driver.GetContexts ()
+driver.GetContext ()
+</code></pre>
+
+<pre><code class="java">// java
+Set&lt;String&gt; contextNames = driver.getContextHandles();
+String context = driver.getContext();
+</code></pre>
+
+<pre><code class="php">// php
+$contexts = $this-&gt;contexts();
+$context = $this-&gt;context();
+</code></pre>
+
+<pre><code class="ruby"># ruby
+contexts = available_contexts
+context = current_context
+</code></pre>
+
+<p>And to switch between them, you use</p>
+<pre><code class="python"># python
+driver.switch_to.context(&quot;WEBVIEW&quot;)
+</code></pre>
+
+<pre><code class="javascript">// javascript
+driver.currentContext().then(function (context) { /*...*/ })
+</code></pre>
+
+<pre><code class="c#">// c#
+driver.SetContext (&quot;WEBVIEW&quot;);
+</code></pre>
+
+<pre><code class="java">java
+driver.context(contextName);
+</code></pre>
+
+<pre><code class="php">// php
+$this-&gt;context('WEBVIEW');
+</code></pre>
+
+<pre><code class="ruby"># ruby
+set_context &quot;WEBVIEW&quot;
+</code></pre>
+
+<h3 id="no-more-execute_scriptmobile-xxx">No more <code>execute_script("mobile: xxx")</code></h3>
+<p>All the <code>mobile:</code> methods have been removed, and have been replaced by native methods in the Appium client libraries. This means that a method call like <code>driver.execute("mobile: lock", [5])</code> will now look something more like <code>driver.lock(5)</code> (where <code>lock</code> has been turned into a native client method). Of course, the details on calling these methods will differ by client.</p>
+<p>Of particular note, the gesture methods have been replaced by the new TouchAction / MultiAction API which allows for a much more powerful and general way of putting gestural automation together. Refer to your Appium client for usage notes on TouchAction / MultiAction.</p>
+<p>And that's it! Happy migrating!</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

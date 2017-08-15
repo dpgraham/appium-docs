@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Running tests - Appium</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Appium</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About appium <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about-appium/appium-clients/">Appium clients</a>
+</li>
+                            
+<li >
+    <a href="../../about-appium/intro/">Intro</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../advanced/chromedriver/">Chromedriver</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/cross-domain-iframes/">Cross domain iframes</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/event-timings/">Event timings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/grid/">Grid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/hybrid/">Hybrid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-touch-id/">Ios touch id</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-webkit-debug-proxy/">Ios webkit debug proxy</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/iwd_xcode7/">Iwd xcode7</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-1-0/">Migrating to 1 0</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-xcuitest/">Migrating to xcuitest</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/settings/">Settings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/wda-custom-server/">Wda custom server</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../contributing/appium-from-source/">Appium from source</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/appium-packages/">Appium packages</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/credits/">Credits</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/developers-overview/">Developers overview</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/gulp/">Gulp</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/how-to-write-docs/">How to write docs</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide-2.0/">Style guide 2.0</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/style-guide/">Style guide</a>
+</li>
+                            
+<li >
+    <a href="../../contributing/version-branch-release/">Version branch release</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../setup/android-hax-emulator/">Android hax emulator</a>
+</li>
+                            
+<li >
+    <a href="../../setup/android-setup/">Android setup</a>
+</li>
+                            
+<li >
+    <a href="../../setup/ios-deploy/">Ios deploy</a>
+</li>
+                            
+<li >
+    <a href="../../setup/parallel_tests/">Parallel tests</a>
+</li>
+                            
+<li >
+    <a href="../../setup/platform-support/">Platform support</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-android/">Real devices android</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-ios/">Real devices ios</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices/">Real devices</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-linux/">Running on linux</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-osx/">Running on osx</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-windows/">Running on windows</a>
+</li>
+                            
+<li >
+    <a href="../../setup/troubleshooting/">Troubleshooting</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Writing and running <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../appium-bindings/">Appium bindings</a>
+</li>
+                            
+<li >
+    <a href="../caps/">Caps</a>
+</li>
+                            
+<li >
+    <a href="../default-capabilities-arg/">Default capabilities arg</a>
+</li>
+                            
+<li >
+    <a href="../espresso/">Espresso</a>
+</li>
+                            
+<li >
+    <a href="../finding-elements/">Finding elements</a>
+</li>
+                            
+<li >
+    <a href="../ios-xctest-mobile-gestures/">Ios xctest mobile gestures</a>
+</li>
+                            
+<li >
+    <a href="../ios_predicate/">Ios predicate</a>
+</li>
+                            
+<li >
+    <a href="../mobile-web/">Mobile web</a>
+</li>
+                            
+<li >
+    <a href="../network_connection/">Network connection</a>
+</li>
+                            
+<li >
+    <a href="../reset-strategies/">Reset strategies</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Running tests</a>
+</li>
+                            
+<li >
+    <a href="../safari-launcher/">Safari launcher</a>
+</li>
+                            
+<li >
+    <a href="../server-args/">Server args</a>
+</li>
+                            
+<li >
+    <a href="../touch-actions/">Touch actions</a>
+</li>
+                            
+<li >
+    <a href="../uiautomator2/">Uiautomator2</a>
+</li>
+                            
+<li >
+    <a href="../uiautomator_uiselector/">Uiautomator uiselector</a>
+</li>
+                            
+<li >
+    <a href="../unicode/">Unicode</a>
+</li>
+                            
+<li >
+    <a href="../windows-app-testing/">Windows app testing</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../reset-strategies/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../safari-launcher/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#running-tests">Running Tests</a></li>
+            <li><a href="#preparing-your-app-for-test-ios">Preparing your app for test (iOS)</a></li>
+            <li><a href="#preparing-your-app-for-test-android">Preparing your app for test (Android)</a></li>
+            <li><a href="#preparing-your-app-for-test-windows">Preparing your app for test (Windows)</a></li>
+            <li><a href="#running-your-test-app-with-appium-ios">Running your test app with Appium (iOS)</a></li>
+            <li><a href="#running-your-test-app-with-appium-android">Running your test app with Appium (Android)</a></li>
+            <li><a href="#running-your-test-app-with-appium-android-devices-42-and-hybrid-tests">Running your test app with Appium (Android devices &lt; 4.2, and hybrid tests)</a></li>
+            <li><a href="#running-your-test-app-with-appium-windows">Running your test app with Appium (Windows)</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="running-tests">Running Tests</h2>
+<h3 id="preparing-your-app-for-test-ios">Preparing your app for test (iOS)</h3>
+<p>Test apps run on the simulator have to be compiled specifically for the
+simulator, for example by executing the following command in the Xcode project (you can use <code>xcodebuild -showsdks</code> to see the list of available SDKs):</p>
+<pre><code>&gt; xcodebuild -sdk iphonesimulator6.0
+</code></pre>
+<p>This creates a <code>build/Release-iphonesimulator</code> directory in your Xcode project
+that contains the <code>.app</code> package that you'll need to communicate with the
+Appium server.</p>
+<p>If you want, you can zip up the .app directory into a .zip file! Appium will
+unpack it for you. Nice if you're not using Appium locally.</p>
+<h3 id="preparing-your-app-for-test-android">Preparing your app for test (Android)</h3>
+<p>Nothing in particular needs to be done to run your .apk using Appium. If you
+want to zip it up, you can.</p>
+<h3 id="preparing-your-app-for-test-windows">Preparing your app for test (Windows)</h3>
+<p>Nothing in particular needs to be done to run your test.</p>
+<h3 id="running-your-test-app-with-appium-ios">Running your test app with Appium (iOS)</h3>
+<p>The best way to see what to do currently is to look at the example tests:</p>
+<p><a href="https://github.com/appium/sample-code/tree/master/sample-code/examples/node">Node.js</a> | <a href="https://github.com/appium/sample-code/tree/master/sample-code/examples/python">Python</a> | <a href="https://github.com/appium/sample-code/tree/master/sample-code/examples/php">PHP</a> | <a href="https://github.com/appium/sample-code/tree/master/sample-code/examples/ruby">Ruby</a> | <a href="https://github.com/appium/sample-code/tree/master/sample-code/examples/java">Java</a></p>
+<p>Basically, first make sure Appium is running:</p>
+<pre><code>node .
+</code></pre>
+<p>Then script your WebDriver test, sending in the following desired capabilities:</p>
+<pre><code class="javascript">// javascript
+{
+    platformName: 'iOS',
+    platformVersion: '7.1',
+    deviceName: 'iPhone Simulator',
+    app: myApp
+}
+</code></pre>
+
+<pre><code class="python"># python
+{
+    'platformName': 'iOS',
+    'platformVersion': '7.1',
+    'deviceName': 'iPhone Simulator',
+    'app': myApp
+}
+</code></pre>
+
+<pre><code class="php">// php
+public static $browsers = array(
+    array(
+        'desiredCapabilities' =&gt; array(
+            'platformName' =&gt; 'iOS',
+            'platformVersion' =&gt; '7.1',
+            'deviceName' =&gt; 'iPhone Simulator',
+            'app' =&gt; $myApp
+        )
+    )
+);
+</code></pre>
+
+<pre><code class="java">// java
+DesiredCapabilities capabilities = new DesiredCapabilities();
+capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, &quot;iOS&quot;);
+capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, &quot;7.1&quot;);
+capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, &quot;iPhone Simulator&quot;);
+capabilities.setCapability(MobileCapabilityType.APP, myApp);
+</code></pre>
+
+<p>In this set of capabilities, <code>myApp</code> must be either:</p>
+<ul>
+<li>A local absolute path to your simulator-compiled .app directory or .zip</li>
+<li>A url of a zip file containing your .app package</li>
+<li>A path to one of the sample app relative to the appium install root</li>
+</ul>
+<p>Using your WebDriver library of choice, set the remote session to use these
+capabilities and connect to the server running at port 4723 of localhost (or
+whatever host and port you specified when you started Appium). You should be
+all set now!</p>
+<h3 id="running-your-test-app-with-appium-android">Running your test app with Appium (Android)</h3>
+<p>First, make sure you have one and only one Android emulator or device
+connected. If you run <code>adb devices</code>, for example, you should see one device
+connected. This is the device Appium will use for tests. Of course, to have
+a device connected, you'll need to have made an Android AVD (see system
+setup (<a href="https://github.com/appium/appium/blob/master/docs/en/appium-setup/running-on-windows.md">Windows</a>,
+<a href="https://github.com/appium/appium/blob/master/docs/en/appium-setup/running-on-osx.md">Mac</a>,
+or <a href="https://github.com/appium/appium/blob/master/docs/en/appium-setup/running-on-linux.md">Linux</a>)
+for more information). If the Android SDK tools are on your path, you can
+simply run:</p>
+<pre><code>emulator -avd &lt;MyAvdName&gt;
+</code></pre>
+<p>And wait for the android emulator to finish launching. Sometimes, for various
+reasons, <code>adb</code> gets stuck. If it's not showing any connected devices or
+otherwise failing, you can restart it by running:</p>
+<pre><code>adb kill-server &amp;&amp; adb devices
+</code></pre>
+<p>Now, make sure Appium is running:</p>
+<pre><code>node .
+</code></pre>
+<p>There are several ways to start an Appium application (it works exactly
+the same as when the application is started via adb):</p>
+<ul>
+<li>apk or zip only, the default activity will be launched ('app' capability)</li>
+<li>apk + activity ('app' + 'appActivity' capabilities)</li>
+<li>apk + activity + intent ('app' + 'appActivity' + 'appIntent' capabilities)</li>
+<li>...</li>
+</ul>
+<p>Activities may be specified in the following way:</p>
+<ul>
+<li>absolute (e.g. appActivity: 'com.helloworld.SayHello').</li>
+<li>relative to appPackage (e.g. appPackage: 'com.helloworld', appActivity='.SayHello')</li>
+</ul>
+<p>If the 'appWaitPackage' and 'appWaitActivity' caps are specified, Appium
+automatically spins until those activities are launched. You may specify
+multiple wait activities for instance:</p>
+<ul>
+<li>appActivity: 'com.splash.SplashScreen'</li>
+<li>appPackage: 'com.splash' appActivity: '.SplashScreen'</li>
+<li>appPackage: 'com.splash' appActivity: '.SplashScreen,.LandingPage,com.why.GoThere'</li>
+</ul>
+<p>If you are not sure what activity are configured in your apk, you can
+proceed in one of the following ways:</p>
+<ul>
+<li>Mac/Linux: 'adb shell dumpsys window windows | grep mFocusedApp'</li>
+<li>In the Ruby console: 'adb shell dumpsys window windows`.each_line.grep(/mFocusedApp/).first.strip'</li>
+<li>In Windows terminal run 'adb shell dumpsys window windows' and manually look for the mFocusedApp line.</li>
+</ul>
+<p>Then script your WebDriver test, sending in the following desired capabilities:</p>
+<pre><code class="javascript">// javascript
+{
+    platformName: 'Android',
+    platformVersion: '4.4',
+    deviceName: 'Android Emulator',
+    app: myApp
+}
+</code></pre>
+
+<pre><code class="python"># python
+{
+    'platformName': 'Android',
+    'platformVersion': '4.4',
+    'deviceName': 'Android Emulator',
+    'app': myApp
+}
+</code></pre>
+
+<pre><code class="php">// php
+public static $browsers = array(
+    array(
+        'desiredCapabilities' =&gt; array(
+            'platformName' =&gt; 'Android',
+            'platformVersion' =&gt; '4.4',
+            'deviceName' =&gt; 'Android Emulator',
+            'app' =&gt; $myApp
+        )
+    )
+);
+</code></pre>
+
+<pre><code class="java">// java
+DesiredCapabilities capabilities = new DesiredCapabilities();
+capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, &quot;Android&quot;);
+capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, &quot;4.4&quot;);
+capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, &quot;Android Emulator&quot;);
+capabilities.setCapability(MobileCapabilityType.APP, myApp);
+</code></pre>
+
+<p>In this set of capabilities, <code>myApp</code> must be either:</p>
+<ul>
+<li>A local absolute path to your .apk or a .zip of it</li>
+<li>A url of a zip file containing your .apk</li>
+<li>A path to one of the sample app relative to the appium install root</li>
+</ul>
+<p>Using your WebDriver library of choice, set the remote session to use these
+capabilities and connect to the server running at port 4723 of localhost (or
+whatever host and port you specified when you started Appium). You should be
+all set now!</p>
+<h3 id="running-your-test-app-with-appium-android-devices-42-and-hybrid-tests">Running your test app with Appium (Android devices &lt; 4.2, and hybrid tests)</h3>
+<p>Android devices before version 4.2 (API Level 17) do not have Google's
+<a href="http://developer.android.com/tools/testing-support-library/index.html#UIAutomator">UiAutomator framework</a>
+installed. This is what Appium uses to perform the automation behaviors on
+the device. For earlier devices or tests of hybrid (webview-based) apps,
+Appium comes bundled with another automation backend called [Selendroid]
+(http://selendroid.io/).</p>
+<p>To use Selendroid, all that is required is to slightly change the set of
+desired capabilities mentioned above, by adding the <code>automationName</code> capability
+and specifying the Selendroid automation backend. It is usually the case that you
+also need to use a <code>.</code> before your activity name (e.g., <code>.MainActivity</code> instead
+of <code>MainActivity</code> for your <code>appActivity</code> capability).</p>
+<pre><code class="javascript">// javascript
+{
+    automationName: 'Selendroid',
+    platformName: 'Android',
+    platformVersion: '2.3',
+    deviceName: 'Android Emulator',
+    app: myApp,
+    appPackage: 'com.mycompany.package',
+    appActivity: '.MainActivity'
+}
+</code></pre>
+
+<pre><code class="python"># python
+{
+    'automationName': 'Selendroid',
+    'platformName': 'Android',
+    'platformVersion': '2.3',
+    'deviceName': 'Android Emulator',
+    'app': myApp,
+    'appPackage': 'com.mycompany.package',
+    'appActivity': '.MainActivity'
+}
+</code></pre>
+
+<pre><code class="php">// php
+public static $browsers = array(
+    array(
+        'desiredCapabilities' =&gt; array(
+            'automationName' =&gt; 'Selendroid',
+            'platformName' =&gt; 'Android',
+            'platformVersion' =&gt; '2.3',
+            'deviceName' =&gt; 'Android Emulator',
+            'app' =&gt; $myApp,
+            'appPackage' =&gt; 'com.mycompany.package',
+            'appActivity'=&gt; '.MainActivity'
+        )
+    )
+);
+</code></pre>
+
+<pre><code class="java">// java
+DesiredCapabilities capabilities = new DesiredCapabilities();
+capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, &quot;Selendroid&quot;);
+capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, &quot;Android&quot;);
+capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, &quot;2.3&quot;);
+capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, &quot;Android Emulator&quot;);
+capabilities.setCapability(MobileCapabilityType.APP, myApp);
+capabilities.setCapability(MobileCapabilityType.APP_PACKAGE: &quot;com.mycompany.package&quot;);
+capabilities.setCapability(MobileCapabilityType.APP_ACTIVITY: &quot;.MainActivity&quot;);
+</code></pre>
+
+<p>Now Appium will start up a Selendroid test session instead of the default test
+session. One of the downsides to using Selendroid is that its API differs
+sometimes significantly with Appium's. Therefore we recommend you thoroughly
+read <a href="http://selendroid.io/native.html">Selendroid's documentation</a> before
+writing your scripts for older devices or hybrid apps.</p>
+<h3 id="running-your-test-app-with-appium-windows">Running your test app with Appium (Windows)</h3>
+<p>Simply ensure that Appium is listening, and run your test with your test runner of choice.</p>
+<p>See our <a href="https://github.com/Microsoft/WinAppDriver/tree/master/Samples">samples</a> for details.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

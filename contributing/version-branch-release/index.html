@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Version branch release - Appium</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Appium</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About appium <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about-appium/appium-clients/">Appium clients</a>
+</li>
+                            
+<li >
+    <a href="../../about-appium/intro/">Intro</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../advanced/chromedriver/">Chromedriver</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/cross-domain-iframes/">Cross domain iframes</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/event-timings/">Event timings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/grid/">Grid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/hybrid/">Hybrid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-touch-id/">Ios touch id</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-webkit-debug-proxy/">Ios webkit debug proxy</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/iwd_xcode7/">Iwd xcode7</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-1-0/">Migrating to 1 0</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-xcuitest/">Migrating to xcuitest</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/settings/">Settings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/wda-custom-server/">Wda custom server</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../appium-from-source/">Appium from source</a>
+</li>
+                            
+<li >
+    <a href="../appium-packages/">Appium packages</a>
+</li>
+                            
+<li >
+    <a href="../credits/">Credits</a>
+</li>
+                            
+<li >
+    <a href="../developers-overview/">Developers overview</a>
+</li>
+                            
+<li >
+    <a href="../gulp/">Gulp</a>
+</li>
+                            
+<li >
+    <a href="../how-to-write-docs/">How to write docs</a>
+</li>
+                            
+<li >
+    <a href="../style-guide-2.0/">Style guide 2.0</a>
+</li>
+                            
+<li >
+    <a href="../style-guide/">Style guide</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Version branch release</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../setup/android-hax-emulator/">Android hax emulator</a>
+</li>
+                            
+<li >
+    <a href="../../setup/android-setup/">Android setup</a>
+</li>
+                            
+<li >
+    <a href="../../setup/ios-deploy/">Ios deploy</a>
+</li>
+                            
+<li >
+    <a href="../../setup/parallel_tests/">Parallel tests</a>
+</li>
+                            
+<li >
+    <a href="../../setup/platform-support/">Platform support</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-android/">Real devices android</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-ios/">Real devices ios</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices/">Real devices</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-linux/">Running on linux</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-osx/">Running on osx</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-windows/">Running on windows</a>
+</li>
+                            
+<li >
+    <a href="../../setup/troubleshooting/">Troubleshooting</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Writing and running <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../writing-and-running/appium-bindings/">Appium bindings</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/caps/">Caps</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/default-capabilities-arg/">Default capabilities arg</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/espresso/">Espresso</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/finding-elements/">Finding elements</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/ios-xctest-mobile-gestures/">Ios xctest mobile gestures</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/ios_predicate/">Ios predicate</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/mobile-web/">Mobile web</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/network_connection/">Network connection</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/reset-strategies/">Reset strategies</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/running-tests/">Running tests</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/safari-launcher/">Safari launcher</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/server-args/">Server args</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/touch-actions/">Touch actions</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/uiautomator2/">Uiautomator2</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/uiautomator_uiselector/">Uiautomator uiselector</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/unicode/">Unicode</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/windows-app-testing/">Windows app testing</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../style-guide/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../setup/android-hax-emulator/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#appium-version-branch-and-release-models">Appium Version, Branch, and Release Models</a></li>
+            <li><a href="#versioning">Versioning</a></li>
+            <li><a href="#branching-and-release-model">Branching and Release Model</a></li>
+            <li><a href="#milestones">Milestones</a></li>
+            <li><a href="#workflow">Workflow</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="appium-version-branch-and-release-models">Appium Version, Branch, and Release Models</h1>
+<h2 id="versioning">Versioning</h2>
+<p>Following 1.3.6, Appium switched to semantic versioning: <code>major | minor | patch | [-beta{N}]</code>. E.g., <code>1.4.1</code> or <code>2.4.0-Beta4</code>.
+<em> Major: API-breaking changes; new features
+</em> Minor: Backward-compatible changes; may or may not include new features
+* Patch: Quick fix engineering; no new features</p>
+<p>This makes Appium’s versioning consistent with other major projects in the NPM ecosystem. It also works well with the trunk-based development model described below.</p>
+<h2 id="branching-and-release-model">Branching and Release Model</h2>
+<p>Appium uses <a href="http://paulhammant.com/2013/04/05/what-is-trunk-based-development/">Trunk Based Development</a>. As Paul Hammant explains,</p>
+<blockquote>
+<p>Trunk Based Development (TBD) is where all developers (for a particular deployable unit) commit to one shared branch under source-control. That branch is going to be colloquially known as trunk. </p>
+<p>… Branches are made for a release. Developers are not allowed to make branches in that shared place. Only release engineers commit to those branches, and indeed create each release branch. They may also cherry-pick individual commits to that branch if there is a desire to do so. </p>
+<p>… The release branch that will live for a short time before it is replaced by another release branch, takes everything from trunk when it is created. In terms of merges, only cherry-picks FROM trunk TO the release branch are supported.</p>
+</blockquote>
+<h2 id="milestones">Milestones</h2>
+<p>The versioning and release model shape how we set Appium milestones. The next milestone is always a Major.Minor release. Triaged bugs and features that aren't associated with the next Major.Minor release should be backlogged in eponymously-named milestones (i.e., <code>Bugs</code> and <code>Features</code>). In general, our goal is a minor release every 8 to 10 weeks. This includes approximately a week of Beta testing and another week for fixes and final changes. Hotfixes are released (Major.Minor.Patch) as needed between the Major.Minor versions. This allows us to get fixes out quickly while minimizing the risk of regression.</p>
+<h2 id="workflow">Workflow</h2>
+<p>For Appium, the basic flow looks like this:</p>
+<ol>
+<li>All PRs go to <code>master</code> (aka <code>trunk</code>).</li>
+<li>Whoever is leading a release acts as the "release engineer" (RE). When the release is ready to be shared (“Beta" status or better), the RE creates a new branch <code>v[Major].[Minor].[Patch]-branch</code>.</li>
+<li>PRs continue to go to <code>master</code>.</li>
+<li>If the release requires fixes committed to <code>master</code>, the RE cherrypicks those commits into the release branch. </li>
+<li>The release branch can be amended with hotfixes for subsequent patch releases. This allows the team to carefully scope small changesets for quick release. Fixes can also be pulled into previous release  branches branches when needed.  </li>
+<li>Rinse, repeat.</li>
+</ol>
+<p>Developers can maintain working branches however they like. These are strictly for personal use. All “official” branches should conform to the model defined above.</p>
+<h3 id="example">Example</h3>
+<ol>
+<li>It’s 1 June. The Appium team plans on releasing 20.1-beta on 15 July and the full 20.1 release on 1 August.</li>
+<li>For the next six weeks, the team commits their work to <code>master</code>.</li>
+<li>On 15 July, the acting RE creates <code>20.1-branch</code>. The first node is tagged “20.1.0 Beta”.</li>
+<li>One team member begins fixing bugs in the beta. The fixes are committed to <code>master</code>.</li>
+<li>Other contributors begin committing changes that are planned for 20.2. These also go to <code>master</code>.</li>
+<li>The RE cherrypicks the fixes into <code>20.1-branch</code>, leaving the other changes on <code>master</code>.</li>
+<li>The team celebrates that all the beta bugs are fixed for the 1 August release.</li>
+<li>The RE tags HEAD of <code>20.1-branch</code> as <code>20.1.0</code> and publishes the release.</li>
+<li>A few weeks later, a crash is discovered in <code>20.1.0</code> and users need a fix NOW.</li>
+<li>The acting RE pulls the crash fix from master into <code>20.1-branch</code>, tags HEAD as <code>20.1.1</code>, and publishes the hotfix.</li>
+<li>The cycle repeats once the <code>20.2</code> release is ready. </li>
+</ol></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

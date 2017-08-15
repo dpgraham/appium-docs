@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Appium from source - Appium</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">Appium</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About appium <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../about-appium/appium-clients/">Appium clients</a>
+</li>
+                            
+<li >
+    <a href="../../about-appium/intro/">Intro</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Advanced <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../advanced/chromedriver/">Chromedriver</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/cross-domain-iframes/">Cross domain iframes</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/event-timings/">Event timings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/grid/">Grid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/hybrid/">Hybrid</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-touch-id/">Ios touch id</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/ios-webkit-debug-proxy/">Ios webkit debug proxy</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/iwd_xcode7/">Iwd xcode7</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-1-0/">Migrating to 1 0</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/migrating-to-xcuitest/">Migrating to xcuitest</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/settings/">Settings</a>
+</li>
+                            
+<li >
+    <a href="../../advanced/wda-custom-server/">Wda custom server</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li class="active">
+    <a href="./">Appium from source</a>
+</li>
+                            
+<li >
+    <a href="../appium-packages/">Appium packages</a>
+</li>
+                            
+<li >
+    <a href="../credits/">Credits</a>
+</li>
+                            
+<li >
+    <a href="../developers-overview/">Developers overview</a>
+</li>
+                            
+<li >
+    <a href="../gulp/">Gulp</a>
+</li>
+                            
+<li >
+    <a href="../how-to-write-docs/">How to write docs</a>
+</li>
+                            
+<li >
+    <a href="../style-guide-2.0/">Style guide 2.0</a>
+</li>
+                            
+<li >
+    <a href="../style-guide/">Style guide</a>
+</li>
+                            
+<li >
+    <a href="../version-branch-release/">Version branch release</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setup <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../setup/android-hax-emulator/">Android hax emulator</a>
+</li>
+                            
+<li >
+    <a href="../../setup/android-setup/">Android setup</a>
+</li>
+                            
+<li >
+    <a href="../../setup/ios-deploy/">Ios deploy</a>
+</li>
+                            
+<li >
+    <a href="../../setup/parallel_tests/">Parallel tests</a>
+</li>
+                            
+<li >
+    <a href="../../setup/platform-support/">Platform support</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-android/">Real devices android</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices-ios/">Real devices ios</a>
+</li>
+                            
+<li >
+    <a href="../../setup/real-devices/">Real devices</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-linux/">Running on linux</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-osx/">Running on osx</a>
+</li>
+                            
+<li >
+    <a href="../../setup/running-on-windows/">Running on windows</a>
+</li>
+                            
+<li >
+    <a href="../../setup/troubleshooting/">Troubleshooting</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Writing and running <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../../writing-and-running/appium-bindings/">Appium bindings</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/caps/">Caps</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/default-capabilities-arg/">Default capabilities arg</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/espresso/">Espresso</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/finding-elements/">Finding elements</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/ios-xctest-mobile-gestures/">Ios xctest mobile gestures</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/ios_predicate/">Ios predicate</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/mobile-web/">Mobile web</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/network_connection/">Network connection</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/reset-strategies/">Reset strategies</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/running-tests/">Running tests</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/safari-launcher/">Safari launcher</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/server-args/">Server args</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/touch-actions/">Touch actions</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/uiautomator2/">Uiautomator2</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/uiautomator_uiselector/">Uiautomator uiselector</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/unicode/">Unicode</a>
+</li>
+                            
+<li >
+    <a href="../../writing-and-running/windows-app-testing/">Windows app testing</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../../advanced/wda-custom-server/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../appium-packages/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#running-appium-from-source">Running Appium from Source</a></li>
+            <li><a href="#setting-up-appium-from-source">Setting up Appium from Source</a></li>
+            <li><a href="#hacking-on-appium">Hacking on Appium</a></li>
+            <li><a href="#running-tests">Running Tests</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="running-appium-from-source">Running Appium from Source</h2>
+<p>So you want to run Appium from source and help fix bugs and add features?
+Great! Just fork the project, make a change, and send a pull request! Please
+have a look at our <a href="../style-guide-2.0/">Style Guide</a> before getting to work.
+Please make sure the unit and functional tests pass before sending a pull
+request; for more information on how to run tests, keep reading!</p>
+<p>Make sure you read and follow the setup instructions in the README first.</p>
+<h3 id="setting-up-appium-from-source">Setting up Appium from Source</h3>
+<p>An Appium setup involves the Appium server, which sends messages back and forth
+between your test code and devices/emulators, and a test script, written in
+whatever language binding exists that is compatible with Appium. Run an
+instance of an Appium server, and then run your test.</p>
+<p>The quick way to get started:</p>
+<pre><code class="center">git clone https://github.com/appium/appium.git
+cd appium
+npm install
+gulp transpile # requires gulp, see below
+npm install -g authorize-ios # for ios only
+authorize-ios                # for ios only
+node .
+</code></pre>
+
+<h3 id="hacking-on-appium">Hacking on Appium</h3>
+<p>Make sure you have <code>ant</code>, <code>maven</code>, <code>adb</code> installed and added to system <code>PATH</code>, also you
+would need the android-16 sdk (for Selendroid) and android-19 sdk installed.
+From your local repo's command prompt, install the following packages using the
+following commands (if you didn't install <code>node</code> using Homebrew, you might have
+to run <code>npm</code> with sudo privileges):</p>
+<pre><code class="center">npm install -g mocha
+npm install -g gulp
+npm install -g gulp-cli
+npm install -g appium-doctor &amp;&amp; appium-doctor --dev
+npm install
+gulp transpile
+</code></pre>
+
+<p>The first two commands install test and build tools (<code>sudo</code> may not be
+necessary if you installed node.js via Homebrew). The third command verifies
+that all of the dependencies are set up correctly (since dependencies for
+building Appium are different from those for simply running Appium) and fourth
+command installs all app dependencies and builds supporting binaries and test
+apps. The final command transpiles all the code so that <code>node</code> can run it.</p>
+<p>When pulling new code from GitHub, if there are changes to <code>package.json</code> it
+is necessary to remove the old dependencies and re-run <code>npm install</code>:</p>
+<pre><code class="center">rm -rf node_modules
+npm install
+gulp transpile
+</code></pre>
+
+<p>At this point, you will be able to start the Appium server:</p>
+<pre><code class="center">node .
+</code></pre>
+
+<p>See <a href="/docs/en/writing-running-appium/server-args.md">the server documentation</a>
+for a full list of arguments.</p>
+<h4 id="hacking-with-appium-for-ios">Hacking with Appium for iOS</h4>
+<p>To avoid a security dialog that may appear when launching your iOS apps you'll
+have to modify your <code>/etc/authorization</code> file in one of two ways:</p>
+<ol>
+<li>
+<p>Manually modify the element following <code>&lt;allow-root&gt;</code> under <code>&lt;key&gt;system.privilege.taskport&lt;/key&gt;</code>
+   in your <code>/etc/authorization</code> file to <code>&lt;true/&gt;</code>.</p>
+</li>
+<li>
+<p>Run the following command which automatically modifies your
+   <code>/etc/authorization</code> file for you:</p>
+<p><code>center
+npm install -g authorize-ios
+sudo authorize-ios</code></p>
+</li>
+</ol>
+<p>At this point, run:</p>
+<pre><code class="center">rm -rf node-modules
+npm install
+gulp transpile
+</code></pre>
+
+<p>Now your Appium instance is ready to go. Run <code>node .</code> to kick up the Appium server.</p>
+<h4 id="hacking-with-appium-for-android">Hacking with Appium for Android</h4>
+<p>Set up Appium by running:</p>
+<pre><code class="center">rm -rf node-modules
+npm install
+gulp transpile
+</code></pre>
+
+<p>Make sure you have one and only one Android emulator or device running, e.g.,
+by running this command in another process (assuming the <code>emulator</code> command is
+on your path):</p>
+<pre><code class="center">emulator -avd &lt;MyAvdName&gt;
+</code></pre>
+
+<p>Now you are ready to run the Appium server via <code>node .</code>.</p>
+<h4 id="making-sure-youre-up-to-date">Making sure you're up to date</h4>
+<p>Since Appium uses dev versions of some packages, it often becomes necessary to
+install new <code>npm</code> packages or update various things. Running <code>npm install</code> will
+update everything necessary. You will also need to do this when Appium bumps
+its version up. Prior to running <code>npm install</code> it is recommended to remove
+all the old dependencies in the <code>node_modules</code> directory:</p>
+<pre><code class="center">rm -rf node-modules
+npm install
+gulp transpile
+</code></pre>
+
+<h3 id="running-tests">Running Tests</h3>
+<p>First, check out our documentation on <a href="/docs/en/writing-running-appium/running-tests.md">running tests in
+general</a> Make sure your
+system is set up properly for the platforms you desire to test on.</p>
+<p>Once your system is set up and your code is up to date, you can run unit tests
+with:</p>
+<pre><code class="center">gulp once
+</code></pre>
+
+<p>You can run functional tests for all supported platforms (after ensuring that
+Appium is running in another window with <code>node .</code>) with:</p>
+<pre><code class="center">gulp e2e-test
+</code></pre>
+
+<p>Before committing code, please run <code>gulp once</code> to execute some basic tests and
+check your changes against code quality standards.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
